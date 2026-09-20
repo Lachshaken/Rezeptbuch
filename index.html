@@ -8,48 +8,59 @@
 </head>
 <body>
 
-  <!-- Ganz obere orange Leiste -->
+  <!-- 1. Top Banner ganz oben -->
   <div class="top-banner">
-    Julia's & Diana's Rezeptbuch
+    20% ON SHOTS THIS WEEK — RECHARGE DAILY
   </div>
 
-  <!-- Hero-Bereich mit der großen Überschrift -->
+  <!-- 2. Navigationsleiste -->
+  <nav class="top-nav">
+    <div class="nav-left">MENU 17</div>
+    <div class="nav-center">
+      rezeptbuch <span class="asterisk">*</span>
+    </div>
+    <div class="nav-right">
+      <span class="nav-icon">✉</span>
+      <span class="nav-icon">✕</span>
+      <span class="nav-icon">📷</span>
+      <button class="nav-btn">USE FOR FREE</button>
+    </div>
+  </nav>
+
+  <!-- 3. Riesige Headline -->
   <header class="hero">
-    <h1>Rezeptbuch</h1>
+    <h1>Julia's & Diana's<br>Rezeptbuch</h1>
   </header>
 
-  <!-- Haupt-Layout: Sidebar links + Kacheln rechts -->
+  <!-- 4. Haupt-Layout -->
   <div class="layout-container">
     
-    <!-- Linke minimalistische Sidebar -->
+    <!-- Linke Sidebar -->
     <aside class="sidebar">
-      
-      <!-- Kategorien-Liste -->
       <ul class="category-list" id="categoryList">
-        <li class="active" data-category="All">ALLE KATEGORIEN</li>
-        <li data-category="Frühstück">FRÜHSTÜCK</li>
-        <li data-category="Hauptgericht">HAUPTGERICHT</li>
-        <li data-category="Beilagen">BEILAGEN</li>
-        <li data-category="Suppen">SUPPEN</li>
-        <li data-category="Dessert">DESSERT</li>
+        <li class="active" data-category="All">ALL 17</li>
+        <li data-category="Frühstück">FRÜHSTÜCK 4</li>
+        <li data-category="Hauptgericht">HAUPTGERICHT 5</li>
+        <li data-category="Beilagen">BEILAGEN 3</li>
+        <li data-category="Suppen">SUPPEN 2</li>
+        <li data-category="Dessert">DESSERT 3</li>
       </ul>
 
-      <!-- Suchfeld & Zufallsbutton im passenden Stil -->
+      <!-- Eingabefelder -->
       <div class="sidebar-controls">
         <input type="text" id="searchInput" placeholder="Zutat suchen...">
         <button id="randomBtn" class="random-btn">🎲 Zufall</button>
       </div>
-
     </aside>
 
-    <!-- Rechte Seite mit den Kacheln -->
+    <!-- Kachelbereich -->
     <main class="content-area">
       <div class="recipe-grid" id="recipeGrid"></div>
     </main>
 
   </div>
 
-  <!-- Modal/Popup für das Rezept -->
+  <!-- Modal Popup -->
   <div id="recipeModal" class="modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
