@@ -1,35 +1,71 @@
+/* Grundlegende Einstellungen */
 body {
-  font-family: system-ui, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #f8f9fa;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 20px;
 }
 
-.controls {
+header h1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Layout mit Sidebar */
+.layout-container {
   display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 15px;
+  min-height: calc(100vh - 55px);
 }
 
-input, select, button {
-  padding: 10px 15px;
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-button {
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  cursor: pointer;
+.content-area {
+  flex-grow: 1;
+  padding: 20px;
 }
 
 /* Bilderkacheln Grid */
@@ -77,6 +113,7 @@ button {
   background: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -191,4 +228,10 @@ button {
 
 #randomBtn:active {
   border: 2px solid white;
+}
+
+/* Klick-Fix für das Button-Innere */
+#randomBtn .text,
+#randomBtn .blob {
+  pointer-events: none;
 }
