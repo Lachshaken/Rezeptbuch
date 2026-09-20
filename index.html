@@ -123,25 +123,24 @@
         <label for="categorySelect">Kategorie:</label>
         <select id="categorySelect">
           <option value="All">Alle Kategorien</option>
-          <option value="Frühstück">Breakfast</option>
-          <option value="Hauptgang">Main Dish</option>
-          <option value="Beilagen>Side Course</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Main Dish">Main Dish</option>
+          <option value="Side Course">Side Course</option>
           <option value="Suppen">Suppen</option>
           <option value="Dessert">Dessert</option>
         </select>
       </div>
 
       <!-- Zufalls-Button -->
-<!-- Zufalls-Button (Uiverse-Design) -->
-<div class="filter-group">
-  <button id="randomBtn">
-    <span class="text">Zufallsrezept</span>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-  </button>
-</div>
+      <div class="filter-group">
+        <button id="randomBtn" class="btn-random">🎲 Zufälliges Rezept</button>
+      </div>
+    </aside>
+
+    <!-- Rechte Seite (Hier werden die Rezept-Kacheln aus der script.js eingefügt) -->
+    <main class="content-area">
+      <div class="recipe-grid" id="recipeGrid"></div>
+    </main>
 
   </div>
 
