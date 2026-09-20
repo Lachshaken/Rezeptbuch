@@ -33,7 +33,7 @@ const RECIPES = [
   {
     title: "Overnight Oats mit Beeren",
     category: "Frühstück",
-    badge: "Meal Prep",
+    badge: "Veggi",
     image: "images/overnight-oats.jpg",
     time: "10 Min + über Nacht",
     portions: "2 Portionen",
@@ -55,7 +55,7 @@ const RECIPES = [
   {
     title: "Rührei mit Spinat & Feta",
     category: "Frühstück",
-    badge: "Proteinreich",
+    badge: "Veggi",
     image: "images/ruehrei-spinat.jpg",
     time: "15 Min",
     portions: "2 Portionen",
@@ -102,7 +102,7 @@ const RECIPES = [
   {
     title: "Pasta al Limone",
     category: "Hauptgericht",
-    badge: "20 Minuten",
+    badge: "Veggi",
     image: "images/pasta-al-limone.jpg",
     time: "20 Min",
     portions: "2 Portionen",
@@ -124,7 +124,7 @@ const RECIPES = [
   {
     title: "Rote-Linsen-Dal",
     category: "Hauptgericht",
-    badge: "One Pot",
+    badge: "Veggi",
     image: "images/rote-linsen-dal.jpg",
     time: "35 Min",
     portions: "3 Portionen",
@@ -148,7 +148,7 @@ const RECIPES = [
   {
     title: "Ofenkartoffeln mit Rosmarin",
     category: "Beilage",
-    badge: "Knusprig",
+    badge: "Veggi",
     image: "images/ofenkartoffeln.jpg",
     time: "45 Min",
     portions: "4 Portionen",
@@ -168,7 +168,7 @@ const RECIPES = [
   {
     title: "Krautsalat mit Apfel",
     category: "Beilage",
-    badge: "Frisch",
+    badge: "Veggi",
     image: "images/krautsalat.jpg",
     time: "20 Min",
     portions: "4 Portionen",
@@ -213,7 +213,7 @@ const RECIPES = [
   {
     title: "Joghurt-Kräuter-Dip",
     category: "Dips",
-    badge: "5 Minuten",
+    badge: "Veggi",
     image: "images/kraeuterdip.jpg",
     time: "5 Min",
     portions: "1 Schale",
@@ -256,7 +256,7 @@ const RECIPES = [
   {
     title: "Tomatensuppe mit Basilikum",
     category: "Suppen",
-    badge: "Klassiker",
+    badge: "Veggi",
     image: "images/tomatensuppe.jpg",
     time: "30 Min",
     portions: "3 Portionen",
@@ -300,7 +300,7 @@ const RECIPES = [
   {
     title: "Apfelcrumble",
     category: "Dessert",
-    badge: "Warm",
+    badge: "Veggi",
     image: "images/apfelcrumble.jpg",
     time: "50 Min",
     portions: "4 Portionen",
