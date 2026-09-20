@@ -310,6 +310,8 @@ body{
   padding: 24px;
 }
 
+.modal[hidden]{ display: none; }
+
 .modal__backdrop{
   position: absolute;
   inset: 0;
