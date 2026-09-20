@@ -1,413 +1,492 @@
 /* ============================================================
-   REZEPTBUCH — style.css
+   REZEPTBUCH — script.js
+   ------------------------------------------------------------
+   NEUES REZEPT HINZUFÜGEN:
+   1. Bild in den Ordner "images/" legen (z. B. images/lasagne.jpg)
+   2. Unten im Array RECIPES einen neuen Block ergänzen:
+ 
+      {
+        title: "Lasagne",
+        category: "Hauptgericht",     // muss zu CATEGORIES passen
+        badge: "Klassiker",           // optional, Pille auf dem Bild
+        image: "images/lasagne.jpg",
+        time: "60 Min",
+        portions: "4 Portionen",
+        ingredients: ["Nudelplatten", "Hackfleisch", "..."],
+        steps: ["Schritt 1 ...", "Schritt 2 ..."]
+      },
+ 
+   Mehr ist nicht nötig – Zählung, Filter und Suche laufen automatisch.
    ============================================================ */
  
-:root{
-  --orange:       #DC5B34;
-  --orange-dark:  #c74d29;
-  --bg:           #F7F5F1;   /* Seitenhintergrund (creme) */
-  --tile:         #EFECE6;   /* Bildkachel-Hintergrund   */
-  --ink:          #1d1d1b;   /* Fließtext                */
-  --grey:         #9a978f;   /* Kategorie-Label          */
-  --line:         #ded9d0;
+const CATEGORIES = [
+  "Alle Rezepte",
+  "Frühstück",
+  "Hauptgericht",
+  "Beilage",
+  "Dips",
+  "Suppen",
+  "Dessert"
+];
  
-  --mono: "Space Mono", "Courier New", monospace;
-  --sans: "Poppins", "Helvetica Neue", Arial, sans-serif;
+const RECIPES = [
+  {
+    title: "Overnight Oats mit Beeren",
+    category: "Frühstück",
+    badge: "Meal Prep",
+    image: "images/overnight-oats.jpg",
+    time: "10 Min + über Nacht",
+    portions: "2 Portionen",
+    ingredients: [
+      "100 g Haferflocken",
+      "200 ml Hafermilch",
+      "150 g Naturjoghurt",
+      "1 EL Chiasamen",
+      "150 g gemischte Beeren",
+      "1 EL Ahornsirup"
+    ],
+    steps: [
+      "Haferflocken, Hafermilch, Joghurt und Chiasamen in einem Glas verrühren.",
+      "Mit Ahornsirup süßen und abgedeckt über Nacht in den Kühlschrank stellen.",
+      "Am Morgen umrühren, ggf. etwas Milch nachgießen.",
+      "Mit frischen Beeren toppen und servieren."
+    ]
+  },
+  {
+    title: "Rührei mit Spinat & Feta",
+    category: "Frühstück",
+    badge: "Proteinreich",
+    image: "images/ruehrei-spinat.jpg",
+    time: "15 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "4 Eier",
+      "2 Handvoll Babyspinat",
+      "60 g Feta",
+      "1 Frühlingszwiebel",
+      "1 EL Olivenöl",
+      "Salz, Pfeffer"
+    ],
+    steps: [
+      "Frühlingszwiebel in Ringe schneiden und in Olivenöl kurz andünsten.",
+      "Spinat zugeben und zusammenfallen lassen.",
+      "Eier verquirlen, würzen und in die Pfanne geben.",
+      "Bei mittlerer Hitze stocken lassen, Feta darüber zerbröseln."
+    ]
+  },
+  {
+    title: "Ofengemüse-Bowl mit Kichererbsen",
+    category: "Hauptgericht",
+    badge: "Vegan",
+    image: "images/ofengemuese-bowl.jpg",
+    time: "40 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "1 Dose Kichererbsen",
+      "1 Süßkartoffel",
+      "1 rote Paprika",
+      "1 Zucchini",
+      "2 EL Olivenöl",
+      "1 TL Paprikapulver",
+      "1 TL Kreuzkümmel",
+      "150 g Quinoa"
+    ],
+    steps: [
+      "Ofen auf 200 °C Ober-/Unterhitze vorheizen.",
+      "Gemüse in mundgerechte Stücke schneiden, mit Kichererbsen, Öl und Gewürzen mischen.",
+      "Auf einem Blech 30 Minuten rösten, nach der Hälfte wenden.",
+      "Quinoa nach Packungsanleitung garen.",
+      "Quinoa in Schalen füllen, Ofengemüse darauf verteilen."
+    ]
+  },
+  {
+    title: "Pasta al Limone",
+    category: "Hauptgericht",
+    badge: "20 Minuten",
+    image: "images/pasta-al-limone.jpg",
+    time: "20 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "250 g Spaghetti",
+      "1 Bio-Zitrone",
+      "100 ml Sahne",
+      "50 g Parmesan",
+      "1 Knoblauchzehe",
+      "Olivenöl, Salz, Pfeffer"
+    ],
+    steps: [
+      "Spaghetti in Salzwasser al dente kochen, etwas Nudelwasser aufheben.",
+      "Knoblauch fein hacken und in Olivenöl glasig dünsten.",
+      "Sahne, Zitronenabrieb und -saft zugeben, kurz einkochen.",
+      "Nudeln, Parmesan und etwas Nudelwasser unterheben, bis die Sauce cremig ist."
+    ]
+  },
+  {
+    title: "Rote-Linsen-Dal",
+    category: "Hauptgericht",
+    badge: "One Pot",
+    image: "images/rote-linsen-dal.jpg",
+    time: "35 Min",
+    portions: "3 Portionen",
+    ingredients: [
+      "250 g rote Linsen",
+      "1 Dose Kokosmilch",
+      "1 Zwiebel",
+      "2 cm Ingwer",
+      "2 Knoblauchzehen",
+      "2 TL Currypulver",
+      "400 ml Gemüsebrühe",
+      "Koriander zum Servieren"
+    ],
+    steps: [
+      "Zwiebel, Knoblauch und Ingwer fein würfeln und andünsten.",
+      "Currypulver kurz mitrösten.",
+      "Linsen, Kokosmilch und Brühe zugeben, 20 Minuten köcheln lassen.",
+      "Abschmecken und mit frischem Koriander servieren."
+    ]
+  },
+  {
+    title: "Ofenkartoffeln mit Rosmarin",
+    category: "Beilage",
+    badge: "Knusprig",
+    image: "images/ofenkartoffeln.jpg",
+    time: "45 Min",
+    portions: "4 Portionen",
+    ingredients: [
+      "1 kg festkochende Kartoffeln",
+      "3 EL Olivenöl",
+      "2 Zweige Rosmarin",
+      "3 Knoblauchzehen",
+      "Grobes Salz"
+    ],
+    steps: [
+      "Kartoffeln waschen und vierteln.",
+      "Mit Öl, Rosmarin, angedrücktem Knoblauch und Salz mischen.",
+      "Bei 200 °C ca. 40 Minuten backen, zwischendurch wenden."
+    ]
+  },
+  {
+    title: "Krautsalat mit Apfel",
+    category: "Beilage",
+    badge: "Frisch",
+    image: "images/krautsalat.jpg",
+    time: "20 Min",
+    portions: "4 Portionen",
+    ingredients: [
+      "1/2 Weißkohl",
+      "1 Apfel",
+      "1 Karotte",
+      "3 EL Apfelessig",
+      "2 EL Olivenöl",
+      "1 TL Honig",
+      "Salz, Kümmel"
+    ],
+    steps: [
+      "Weißkohl fein hobeln und mit Salz kräftig durchkneten.",
+      "Apfel und Karotte grob raspeln.",
+      "Essig, Öl, Honig und Kümmel verrühren, untermischen.",
+      "Mindestens 15 Minuten ziehen lassen."
+    ]
+  },
+  {
+    title: "Cremiger Hummus",
+    category: "Dips",
+    badge: "Vegan",
+    image: "images/hummus.jpg",
+    time: "10 Min",
+    portions: "1 Schale",
+    ingredients: [
+      "1 Dose Kichererbsen",
+      "2 EL Tahini",
+      "1 Zitrone",
+      "1 Knoblauchzehe",
+      "3 EL Olivenöl",
+      "1 TL Kreuzkümmel",
+      "Salz"
+    ],
+    steps: [
+      "Kichererbsen abgießen und abspülen.",
+      "Alle Zutaten mit 3–4 EL Eiswasser fein pürieren.",
+      "Abschmecken und mit Olivenöl beträufelt servieren."
+    ]
+  },
+  {
+    title: "Joghurt-Kräuter-Dip",
+    category: "Dips",
+    badge: "5 Minuten",
+    image: "images/kraeuterdip.jpg",
+    time: "5 Min",
+    portions: "1 Schale",
+    ingredients: [
+      "250 g griechischer Joghurt",
+      "1 Bund Schnittlauch",
+      "1 Bund Dill",
+      "1 Knoblauchzehe",
+      "1 TL Zitronensaft",
+      "Salz, Pfeffer"
+    ],
+    steps: [
+      "Kräuter fein hacken.",
+      "Mit Joghurt, gepresstem Knoblauch und Zitronensaft verrühren.",
+      "Würzen und kurz durchziehen lassen."
+    ]
+  },
+  {
+    title: "Kürbissuppe mit Ingwer",
+    category: "Suppen",
+    badge: "Herbst",
+    image: "images/kuerbissuppe.jpg",
+    time: "35 Min",
+    portions: "4 Portionen",
+    ingredients: [
+      "1 Hokkaido-Kürbis",
+      "1 Zwiebel",
+      "2 cm Ingwer",
+      "700 ml Gemüsebrühe",
+      "100 ml Kokosmilch",
+      "Kürbiskernöl"
+    ],
+    steps: [
+      "Kürbis waschen, entkernen und würfeln (Schale kann dranbleiben).",
+      "Zwiebel und Ingwer andünsten, Kürbis zugeben.",
+      "Mit Brühe auffüllen und 20 Minuten weich kochen.",
+      "Fein pürieren, Kokosmilch einrühren, abschmecken."
+    ]
+  },
+  {
+    title: "Tomatensuppe mit Basilikum",
+    category: "Suppen",
+    badge: "Klassiker",
+    image: "images/tomatensuppe.jpg",
+    time: "30 Min",
+    portions: "3 Portionen",
+    ingredients: [
+      "800 g stückige Tomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "400 ml Gemüsebrühe",
+      "1 Bund Basilikum",
+      "1 TL Zucker",
+      "Olivenöl"
+    ],
+    steps: [
+      "Zwiebel und Knoblauch in Olivenöl andünsten.",
+      "Tomaten und Brühe zugeben, 20 Minuten köcheln lassen.",
+      "Mit Zucker, Salz und Pfeffer abschmecken.",
+      "Pürieren und mit frischem Basilikum servieren."
+    ]
+  },
+  {
+    title: "Schokoladenmousse",
+    category: "Dessert",
+    badge: "Für Gäste",
+    image: "images/schokomousse.jpg",
+    time: "20 Min + 3 Std kühlen",
+    portions: "4 Portionen",
+    ingredients: [
+      "200 g Zartbitterschokolade",
+      "3 Eier",
+      "200 ml Sahne",
+      "2 EL Zucker",
+      "1 Prise Salz"
+    ],
+    steps: [
+      "Schokolade über dem Wasserbad schmelzen und leicht abkühlen lassen.",
+      "Eigelb mit Zucker schaumig rühren, Schokolade unterheben.",
+      "Eiweiß mit Salz und Sahne getrennt steif schlagen.",
+      "Beides vorsichtig unterheben und mindestens 3 Stunden kühlen."
+    ]
+  },
+  {
+    title: "Apfelcrumble",
+    category: "Dessert",
+    badge: "Warm",
+    image: "images/apfelcrumble.jpg",
+    time: "50 Min",
+    portions: "4 Portionen",
+    ingredients: [
+      "5 Äpfel",
+      "150 g Mehl",
+      "100 g Butter",
+      "80 g brauner Zucker",
+      "50 g Haferflocken",
+      "1 TL Zimt"
+    ],
+    steps: [
+      "Äpfel schälen, würfeln und mit Zimt in eine Auflaufform geben.",
+      "Mehl, Haferflocken, Zucker und kalte Butter zu Streuseln verkneten.",
+      "Streusel auf den Äpfeln verteilen.",
+      "Bei 180 °C ca. 35 Minuten goldbraun backen."
+    ]
+  }
+];
  
-  --pad: 26px;              /* seitlicher Innenabstand   */
+/* ============================================================
+   Ab hier: Logik – normalerweise nichts mehr zu ändern
+   ============================================================ */
+ 
+const grid        = document.getElementById("recipeGrid");
+const catList     = document.getElementById("categoryList");
+const searchInput = document.getElementById("searchInput");
+const searchClear = document.getElementById("searchClear");
+const emptyState  = document.getElementById("emptyState");
+const headerCount = document.getElementById("headerCount");
+const footerCount = document.getElementById("footerCount");
+const randomBtn   = document.getElementById("randomBtn");
+const modal       = document.getElementById("modal");
+ 
+let activeCategory = "Alle Rezepte";
+let searchTerm     = "";
+let visibleRecipes = [];
+ 
+/* Hilfsfunktionen -------------------------------------------------- */
+ 
+// Umlaute/Groß-Klein egal machen
+function norm(str){
+  return (str || "")
+    .toLowerCase()
+    .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .trim();
 }
  
-*{ box-sizing: border-box; }
- 
-html{ scroll-behavior: smooth; }
- 
-body{
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--sans);
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
+// Suche prüft die Zutatenliste
+function matchesSearch(recipe){
+  if(!searchTerm) return true;
+  const q = norm(searchTerm);
+  return recipe.ingredients.some(i => norm(i).includes(q));
 }
  
-.mono{
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
+function matchesCategory(recipe){
+  return activeCategory === "Alle Rezepte" || recipe.category === activeCategory;
 }
  
-/* ---------- Oranges Band (leer) ---------- */
-.topbar{
-  background: var(--orange);
-  height: 44px;
+function getFiltered(){
+  return RECIPES.filter(r => matchesCategory(r) && matchesSearch(r));
 }
  
-/* ---------- Header ---------- */
-.header{
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  padding: 22px var(--pad);
+/* Sidebar ---------------------------------------------------------- */
+ 
+function renderCategories(){
+  // Zähler berücksichtigen die aktuelle Suche
+  const searchPool = RECIPES.filter(matchesSearch);
+ 
+  catList.innerHTML = CATEGORIES.map(cat => {
+    const count = cat === "Alle Rezepte"
+      ? searchPool.length
+      : searchPool.filter(r => r.category === cat).length;
+ 
+    const active = cat === activeCategory ? " is-active" : "";
+    return `<button type="button" class="filter${active}" data-cat="${cat}">
+              ${cat} <span class="filter__count">${count}</span>
+            </button>`;
+  }).join("");
 }
  
-.header__left  { color: var(--orange); }
-.header__center{ text-align: center; }
-.header__right { text-align: right; }
+/* Kacheln ---------------------------------------------------------- */
  
-.logo{
-  font-family: var(--sans);
-  font-weight: 400;
-  font-size: 26px;
-  color: var(--orange);
-  text-decoration: none;
-  letter-spacing: -.01em;
-}
-.logo__star{ font-weight: 300; }
+function renderGrid(){
+  visibleRecipes = getFiltered();
  
-.btn-random{
-  background: var(--orange);
-  color: #fff;
-  border: 0;
-  border-radius: 999px;
-  padding: 13px 26px;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .18s ease;
-}
-.btn-random:hover{ background: var(--orange-dark); }
+  grid.innerHTML = visibleRecipes.map((r, i) => `
+    <button type="button" class="card" data-index="${i}">
+      <span class="card__media" data-placeholder="${r.title}">
+        <img src="${r.image}" alt="${r.title}" loading="lazy">
+        ${r.badge ? `<span class="card__badge">${r.badge}</span>` : ""}
+      </span>
+      <span class="card__cat mono">${r.category}</span>
+      <h3 class="card__title">${r.title}</h3>
+      <p class="card__ing">${r.ingredients.slice(0, 4).join(", ")}</p>
+      <span class="card__meta mono">${r.time}</span>
+    </button>
+  `).join("");
  
-/* ---------- Hero ---------- */
-.hero{
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 40px;
-  align-items: start;
-  padding: 70px var(--pad) 90px;
+  // Fehlende Bilder → dezenter Platzhalter statt kaputtes Icon
+  grid.querySelectorAll(".card__media img").forEach(img => {
+    img.addEventListener("error", () => img.parentElement.classList.add("is-placeholder"));
+    if(img.complete && img.naturalWidth === 0){
+      img.parentElement.classList.add("is-placeholder");
+    }
+  });
+ 
+  emptyState.hidden = visibleRecipes.length > 0;
+  headerCount.textContent = `Rezepte ${visibleRecipes.length}`;
+  footerCount.textContent = `${RECIPES.length} Rezepte insgesamt`;
 }
  
-.hero__title{
-  margin: 0;
-  color: var(--orange);
-  font-weight: 300;
-  font-size: clamp(48px, 8.5vw, 118px);
-  line-height: .95;
-  letter-spacing: -.035em;
+function render(){
+  renderCategories();
+  renderGrid();
 }
  
-.hero__text{
-  margin: 14px 0 0;
-  color: var(--orange);
-  font-size: 19px;
-  line-height: 1.35;
+/* Detailansicht ---------------------------------------------------- */
+ 
+function openRecipe(recipe){
+  const img = document.getElementById("modalImg");
+  img.src = recipe.image;
+  img.alt = recipe.title;
+ 
+  document.getElementById("modalCat").textContent   = recipe.category;
+  document.getElementById("modalTitle").textContent = recipe.title;
+  document.getElementById("modalMeta").textContent  =
+    [recipe.time, recipe.portions].filter(Boolean).join("  ·  ");
+ 
+  document.getElementById("modalIngredients").innerHTML =
+    recipe.ingredients.map(i => `<li>${i}</li>`).join("");
+ 
+  document.getElementById("modalSteps").innerHTML =
+    recipe.steps.map(s => `<li>${s}</li>`).join("");
+ 
+  modal.hidden = false;
+  document.body.classList.add("is-locked");
+  modal.querySelector(".modal__dialog").scrollTop = 0;
 }
  
-.dotted{
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 5px;
+function closeModal(){
+  modal.hidden = true;
+  document.body.classList.remove("is-locked");
 }
  
-/* ---------- Layout: Sidebar + Grid ---------- */
-.layout{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 30px;
-  padding: 0 var(--pad) 90px;
-  align-items: start;
-}
+/* Events ----------------------------------------------------------- */
  
-/* ---------- Sidebar ---------- */
-.sidebar{
-  position: sticky;
-  top: 24px;
-}
+catList.addEventListener("click", e => {
+  const btn = e.target.closest(".filter");
+  if(!btn) return;
+  activeCategory = btn.dataset.cat;
+  render();
+});
  
-.filters{
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 42px;
-}
+grid.addEventListener("click", e => {
+  const card = e.target.closest(".card");
+  if(!card) return;
+  openRecipe(visibleRecipes[Number(card.dataset.index)]);
+});
  
-.filter{
-  background: none;
-  border: 0;
-  padding: 0;
-  text-align: left;
-  color: var(--orange);
-  font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  opacity: .8;
-  transition: opacity .15s ease;
-}
-.filter:hover{ opacity: 1; }
+searchInput.addEventListener("input", e => {
+  searchTerm = e.target.value;
+  searchClear.hidden = searchTerm.length === 0;
+  render();
+});
  
-.filter.is-active{
-  opacity: 1;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
+searchClear.addEventListener("click", () => {
+  searchTerm = "";
+  searchInput.value = "";
+  searchClear.hidden = true;
+  render();
+});
  
-.filter__count{ opacity: .6; }
+randomBtn.addEventListener("click", () => {
+  // Zufall aus der aktuell sichtbaren Auswahl, sonst aus allen Rezepten
+  const pool = visibleRecipes.length ? visibleRecipes : RECIPES;
+  openRecipe(pool[Math.floor(Math.random() * pool.length)]);
+});
  
-/* Suche */
-.search{ display: flex; flex-direction: column; gap: 10px; }
+modal.addEventListener("click", e => {
+  if(e.target.closest("[data-close]")) closeModal();
+});
  
-.search__label{ color: var(--grey); }
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape" && !modal.hidden) closeModal();
+});
  
-.search__input{
-  width: 100%;
-  background: transparent;
-  border: 1px solid var(--orange);
-  border-radius: 999px;
-  padding: 11px 16px;
-  color: var(--orange);
-  font-size: 12px;
-  text-transform: none;
-  letter-spacing: .03em;
-  outline: none;
-}
-.search__input::placeholder{ color: #d9a894; text-transform: none; }
-.search__input:focus{ border-color: var(--orange-dark); }
- 
-.search__clear{
-  align-self: flex-start;
-  background: none;
-  border: 0;
-  padding: 0;
-  color: var(--grey);
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
- 
-/* ---------- Grid ---------- */
-.grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 46px 28px;
-}
- 
-.card{
-  background: none;
-  border: 0;
-  padding: 0;
-  text-align: left;
-  cursor: pointer;
-  font-family: inherit;
-  display: flex;
-  flex-direction: column;
-}
- 
-.card__media{
-  position: relative;
-  background: var(--tile);
-  aspect-ratio: 1 / 1.07;
-  overflow: hidden;
-  margin-bottom: 18px;
-}
- 
-.card__media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform .45s ease;
-}
-.card:hover .card__media img{ transform: scale(1.04); }
- 
-/* Platzhalter, solange noch kein Bild hinterlegt ist */
-.card__media.is-placeholder img{ display: none; }
-.card__media.is-placeholder::after{
-  content: attr(data-placeholder);
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #c5c0b6;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px;
-}
- 
-.card__badge{
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  border: 1px solid var(--orange);
-  border-radius: 999px;
-  padding: 7px 14px;
-  background: transparent;
-  color: var(--orange);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-}
- 
-.card__cat{
-  color: var(--grey);
-  display: block;
-  margin-bottom: 10px;
-}
- 
-.card__title{
-  margin: 0 0 10px;
-  color: var(--orange);
-  font-family: var(--mono);
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
- 
-.card__ing{
-  margin: 0 0 10px;
-  font-family: var(--mono);
-  font-size: 12.5px;
-  line-height: 1.55;
-  letter-spacing: .03em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
- 
-.card__meta{ color: var(--grey); }
- 
-.empty{
-  color: var(--grey);
-  padding: 40px 0;
-}
- 
-/* ---------- Footer ---------- */
-.footer{
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid var(--line);
-  padding: 22px var(--pad);
-  color: var(--grey);
-}
- 
-/* ---------- Modal ---------- */
-.modal{
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
- 
-.modal__backdrop{
-  position: absolute;
-  inset: 0;
-  background: rgba(29,29,27,.45);
-}
- 
-.modal__dialog{
-  position: relative;
-  background: var(--bg);
-  width: min(900px, 100%);
-  max-height: 88vh;
-  overflow-y: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-}
- 
-.modal__close{
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 2;
-  background: var(--bg);
-  border: 1px solid var(--orange);
-  border-radius: 999px;
-  padding: 8px 14px;
-  color: var(--orange);
-  cursor: pointer;
-}
- 
-.modal__media{ background: var(--tile); }
-.modal__media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
- 
-.modal__body{ padding: 44px 38px; }
- 
-.modal__title{
-  margin: 6px 0 8px;
-  color: var(--orange);
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-}
- 
-.modal__meta{ color: var(--grey); margin: 0 0 26px; }
- 
-.modal__h3{
-  color: var(--grey);
-  margin: 26px 0 12px;
-  font-weight: 400;
-}
- 
-.modal__ingredients{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-transform: none;
-  letter-spacing: .02em;
-}
-.modal__ingredients li{
-  padding: 8px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 12.5px;
-}
- 
-.modal__steps{
-  margin: 0;
-  padding-left: 18px;
-  font-size: 15px;
-  line-height: 1.6;
-}
-.modal__steps li{ margin-bottom: 12px; }
- 
-body.is-locked{ overflow: hidden; }
- 
-/* ---------- Responsive ---------- */
-@media (max-width: 1000px){
-  .hero{ grid-template-columns: 1fr; padding-bottom: 60px; }
-  .grid{ grid-template-columns: repeat(2, 1fr); }
-  .modal__dialog{ grid-template-columns: 1fr; }
-  .modal__media{ aspect-ratio: 16 / 10; }
-}
- 
-@media (max-width: 720px){
-  :root{ --pad: 18px; }
- 
-  .header{ grid-template-columns: 1fr auto; row-gap: 14px; }
-  .header__center{ order: -1; grid-column: 1 / -1; text-align: left; }
- 
-  .layout{ grid-template-columns: 1fr; }
-  .sidebar{ position: static; }
-  .filters{ flex-direction: row; flex-wrap: wrap; gap: 10px 18px; }
-  .grid{ grid-template-columns: 1fr; gap: 38px; }
-  .modal__body{ padding: 30px 22px; }
-}
- 
+render();
