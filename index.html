@@ -3,148 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rezeptbuch</title>
-  
-  <style>
-    /* Grund-Einstellungen */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    /* Oben verankerte Kopfzeile */
-    header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 15px 20px;
-    }
-
-    /* Vorgabe: Schriftart Arial, Größe 20px */
-    header h1 {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333333;
-    }
-
-    /* Haupt-Layout: Sidebar links + Inhalt rechts */
-    .layout-container {
-      display: flex;
-      min-height: calc(100vh - 55px); /* Restliche Bildschirmhöhe ausfüllen */
-    }
-
-    /* Linkes Menüband (Sidebar) */
-    .sidebar {
-      width: 250px;
-      background-color: #ffffff;
-      border-right: 1px solid #e0e0e0;
-      padding: 20px;
-      box-sizing: border-box;
-      flex-shrink: 0;
-    }
-
-    .sidebar h2 {
-      font-size: 16px;
-      margin-top: 0;
-      margin-bottom: 15px;
-      color: #555555;
-    }
-
-    /* Styling für die Bedienelemente im Menüband */
-    .filter-group {
-      margin-bottom: 20px;
-    }
-
-    .filter-group label {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 5px;
-      color: #666;
-    }
-
-    .filter-group input,
-    .filter-group select,
-    .filter-group button {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-
-    .btn-random {
-      background-color: #ff6b6b;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.2s;
-    }
-
-    .btn-random:hover {
-      background-color: #ee5253;
-    }
-
-    /* Hauptbereich rechts für die Bilderkacheln */
-    .content-area {
-      flex-grow: 1;
-      padding: 20px;
-    }
-  </style>
-  
+  <title>Julia's & Diana's Rezeptbuch</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Kopfzeile oben -->
-  <header>
+  <!-- Ganz obere orange Leiste -->
+  <div class="top-banner">
+    Julia's & Diana's Rezeptbuch
+  </div>
+
+  <!-- Hero-Bereich mit der großen Überschrift -->
+  <header class="hero">
     <h1>Rezeptbuch</h1>
   </header>
 
-  <!-- Layout-Container für Menüband + Inhalte -->
+  <!-- Haupt-Layout: Sidebar links + Kacheln rechts -->
   <div class="layout-container">
     
-    <!-- Linkes Menüband -->
+    <!-- Linke minimalistische Sidebar -->
     <aside class="sidebar">
-      <h2>Filter & Suche</h2>
       
-      <!-- Zutaten-Suche -->
-      <div class="filter-group">
-        <label for="searchInput">Zutat suchen:</label>
-        <input type="text" id="searchInput" placeholder="z. B. Tomate...">
+      <!-- Kategorien-Liste -->
+      <ul class="category-list" id="categoryList">
+        <li class="active" data-category="All">ALLE KATEGORIEN</li>
+        <li data-category="Frühstück">FRÜHSTÜCK</li>
+        <li data-category="Hauptgericht">HAUPTGERICHT</li>
+        <li data-category="Beilagen">BEILAGEN</li>
+        <li data-category="Suppen">SUPPEN</li>
+        <li data-category="Dessert">DESSERT</li>
+      </ul>
+
+      <!-- Suchfeld & Zufallsbutton im passenden Stil -->
+      <div class="sidebar-controls">
+        <input type="text" id="searchInput" placeholder="Zutat suchen...">
+        <button id="randomBtn" class="random-btn">🎲 Zufall</button>
       </div>
 
-      <!-- Kategorien-Auswahl -->
-      <div class="filter-group">
-        <label for="categorySelect">Kategorie:</label>
-        <select id="categorySelect">
-          <option value="All">Alle Kategorien</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Main Dish">Main Dish</option>
-          <option value="Side Course">Side Course</option>
-          <option value="Suppen">Suppen</option>
-          <option value="Dessert">Dessert</option>
-        </select>
-      </div>
-
-      <!-- Zufalls-Button -->
-      <div class="filter-group">
-        <button id="randomBtn" class="btn-random">🎲 Zufälliges Rezept</button>
-      </div>
     </aside>
 
-    <!-- Rechte Seite (Hier werden die Rezept-Kacheln aus der script.js eingefügt) -->
+    <!-- Rechte Seite mit den Kacheln -->
     <main class="content-area">
       <div class="recipe-grid" id="recipeGrid"></div>
     </main>
 
   </div>
 
-  <!-- Modal / Popup für die Rezeptansicht -->
+  <!-- Modal/Popup für das Rezept -->
   <div id="recipeModal" class="modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
