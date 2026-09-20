@@ -1,47 +1,85 @@
-/* Grundlegendes Styling */
+/* Styling exakt nach dem Screenshot */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f6f5f3; /* Hellgrauer/Cremefarbener Hintergrund wie auf dem Bild */
-  color: #d94e34;
+  background-color: #f2eee9; /* Exakter beiger Hintergrundton */
+  color: #e04e39; /* Das charakteristische Rot-Orange */
 }
 
-/* 1. Ganz obere orangene Leiste */
+/* Obere rote Leiste */
 .top-banner {
-  background-color: #d94e34;
-  color: #ffffff;
+  background-color: #e04e39;
+  color: #f2eee9;
   text-align: center;
-  padding: 8px 15px;
-  font-size: 13px;
+  padding: 6px 10px;
+  font-size: 11px;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
-/* 2. Riesige Serif/Display-Überschrift */
+/* Navigationszeile */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e04e39;
+}
+
+.nav-center {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.asterisk {
+  font-size: 18px;
+  vertical-align: super;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #e04e39;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Riesige Headline */
 .hero {
-  padding: 40px 40px 20px 40px;
+  padding: 40px 30px 20px 30px;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 80px;
-  font-weight: 800;
-  color: #d94e34;
-  line-height: 0.95;
-  letter-spacing: -2px;
+  font-size: 90px;
+  line-height: 0.9;
+  font-weight: 500;
+  letter-spacing: -3px;
+  color: #e04e39;
 }
 
-/* Layout-Container */
+/* Layout */
 .layout-container {
   display: flex;
-  padding: 20px 40px 60px 40px;
+  padding: 30px;
   gap: 40px;
 }
 
-/* 3. Sidebar (Minimalistisch) */
+/* Sidebar */
 .sidebar {
-  width: 180px;
+  width: 160px;
   flex-shrink: 0;
 }
 
@@ -54,21 +92,16 @@ body {
 .category-list li {
   font-size: 13px;
   font-weight: 700;
-  color: #d94e34;
-  padding: 6px 0;
+  color: #e04e39;
+  margin-bottom: 12px;
   cursor: pointer;
   letter-spacing: 0.5px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  opacity: 0.8;
 }
 
-.category-list li:hover {
-  opacity: 1;
-}
-
+.category-list li:hover,
 .category-list li.active {
   opacity: 1;
-  text-decoration: underline;
 }
 
 .sidebar-controls {
@@ -80,91 +113,106 @@ body {
 #searchInput {
   width: 100%;
   padding: 8px;
-  border: 1px solid #d94e34;
+  border: 1px solid #e04e39;
   background: transparent;
-  color: #d94e34;
+  color: #e04e39;
   border-radius: 4px;
   font-size: 12px;
   box-sizing: border-box;
 }
 
 #searchInput::placeholder {
-  color: #d94e34;
-  opacity: 0.6;
+  color: #e04e39;
+  opacity: 0.7;
 }
 
 .random-btn {
-  background-color: #d94e34;
+  background-color: #e04e39;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 8px;
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
-.random-btn:hover {
-  opacity: 0.9;
-}
-
-/* 4. Content Area & Grid */
+/* Content Area & Grid */
 .content-area {
   flex-grow: 1;
 }
 
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Genau 3 Spalten wie auf dem Vorlagebild */
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-/* 5. Kachel-Design aus der Vorlage */
+/* Die Kacheln aus dem Bild */
 .recipe-card {
   cursor: pointer;
 }
 
 .card-image-box {
-  background-color: #eeebe6; /* Dezent hellgrauer Rahmen um die Speisen */
+  position: relative;
+  background-color: #e6e1da; /* Hellgrauer Rahmen aus der Vorlage */
   height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
-  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* Das rote Label oben links auf dem Bild */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  border: 1px solid #e04e39;
+  color: #e04e39;
+  background-color: rgba(242, 238, 233, 0.8);
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .card-image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
 }
 
-.recipe-card:hover .card-image-box img {
-  transform: scale(1.03);
-}
-
-/* Text unter dem Bild: Grau für Kategorie, Orange für Titel */
+/* Text-Bereich unter der Kachel */
 .category-tag {
   display: block;
-  font-size: 11px;
-  color: #888888; /* Graue Farbe für die Kategorie */
+  font-size: 10px;
+  color: #888888;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 4px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .recipe-title {
-  margin: 0;
-  font-size: 15px;
-  color: #d94e34; /* Orangener Titel */
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  color: #e04e39;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5px;
+}
+
+.ingredients-preview {
+  margin: 0;
+  font-size: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: 600;
 }
 
 /* Modal Popup */
@@ -179,7 +227,7 @@ body {
 }
 
 .modal-content {
-  background: #f6f5f3;
+  background: #f2eee9;
   padding: 30px;
   border-radius: 8px;
   max-width: 500px;
@@ -192,6 +240,6 @@ body {
   position: absolute;
   top: 10px; right: 15px;
   font-size: 24px;
-  color: #d94e34;
+  color: #e04e39;
   cursor: pointer;
 }
