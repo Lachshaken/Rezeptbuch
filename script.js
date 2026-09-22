@@ -51,23 +51,17 @@ const RECIPES = [
       "etwas Rotwein",
     ],
     steps: [
-      "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten 
-       und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
+      "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
        
-       "Teig mit der Nudelmaschine glätten und in dünne Streifen schneiden. 
-       "Nudeln ca. 3-4 Minuten kochen und etwas Nudelwasser beiseite stellen.",
+       "Teig mit der Nudelmaschine glätten und in dünne Streifen schneiden. Nudeln ca. 3-4 Minuten kochen und etwas Nudelwasser beiseite stellen.",
 
-       "Etwas Pancetta/Guancale in kleine Würfel schneiden, Salsiccia (ca. 1 Wurst pro Portion) 
-       "von der Haut befreien, Zwiebel würfeln, Knoblauch klein schneiden.",
+       "Etwas Pancetta/Guancale in kleine Würfel schneiden, Salsiccia (ca. 1 Wurst pro Portion) von der Haut befreien, Zwiebel würfeln, Knoblauch klein schneiden.",
    
-       "Etwas Pancetta/Guancale für das Topping cross anbraten. Aus der Pfanne nehmen und 
-       "Salciccia in der gleichen Pfanne braten.",
+       "Etwas Pancetta/Guancale für das Topping cross anbraten. Aus der Pfanne nehmen und Salciccia in der gleichen Pfanne braten.",
        
-       "Zwiebelwürfel und Knoblauch hinzugeben und weiter anbraten. Wahlweise mit Rotwein und etwas Nudelwasser ablöschen und 
-       "die Passata hinzugeben. Im Anschluss mit Salz und Pfeffer würzen.",
+       "Zwiebelwürfel und Knoblauch hinzugeben und weiter anbraten. Wahlweise mit Rotwein und etwas Nudelwasser ablöschen und die Passata hinzugeben. Im Anschluss mit Salz und Pfeffer würzen.",
 
-       "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas 
-       "Parmesan darüber streuen - et finito.",
+       "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas Parmesan darüber streuen - et finito.",
     ]
   },
   {
