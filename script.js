@@ -31,25 +31,42 @@ const CATEGORIES = [
 
 const RECIPES = [
   {
-    title: "Overnight Oats mit Beeren",
-    category: "Frühstück",
-    badge: "Veggi",
-    image: "images/overnight-oats.jpg",
-    time: "10 Min + über Nacht",
-    portions: "2 Portionen",
+    title: "Tagliatelle mit Salciccia-Soße",
+    category: "Hauptgericht",
+    badge: "Meat",
+    image: "images/Tagliatelle_Salciccia.jpeg",
+    time: "60 Min + 60 Min ruhen lassen",
+    portions: "3-5 Portionen",
     ingredients: [
-      "100 g Haferflocken",
-      "200 ml Hafermilch",
-      "150 g Naturjoghurt",
-      "1 EL Chiasamen",
-      "150 g gemischte Beeren",
-      "1 EL Ahornsirup"
+      "400 g Mehl Typ 0",
+      "4 Eier",
+      "15 ml Olivenöl",
+       "400 ml Passata",
+      "Pancetta/Guanciale",
+      "Salsiccia",
+      "1 Zwiebel",
+      "1,5 Zehen Knoblauch"
+      "Salz",
+      "Pfeffer",
+      "etwas Rotwein",
     ],
     steps: [
-      "Haferflocken, Hafermilch, Joghurt und Chiasamen in einem Glas verrühren.",
-      "Mit Ahornsirup süßen und abgedeckt über Nacht in den Kühlschrank stellen.",
-      "Am Morgen umrühren, ggf. etwas Milch nachgießen.",
-      "Mit frischen Beeren toppen und servieren."
+      "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten",
+       "und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
+       
+       "Teig im Anschluss mit der Nudelmaschine glätten und in dünne Streifen schneiden.",
+       "Nudeln ca. 3-4 Minuten kochen und etwas Nudelwasser beiseite stellen.",
+
+       "Etwas Pancetta/Guancale in kleine Würfel schneiden, Salsiccia (ca. 1 Wurst pro Portion)",
+       "von der Haut befreien, Zwiebel würfeln, Knoblauch klein schneiden.",
+   
+       "Etwas Pancetta/Guancale für das Topping cross anbraten. Aus der Pfanne nehmen und",
+       "Salciccia in der gleichen Pfanne braten. Zwiebelwürfel und Knoblauch hinzugeben",
+       "und weiter anbraten. Wahlweise mit Rotwein und etwas Nudelwasser ablöschen und",
+       "die Passata hinzugeben. Im Anschluss mit Salz und Pfeffer würzen.",
+
+       "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas",
+       "Parmesan darüber streuen - et finito."
     ]
   },
   {
