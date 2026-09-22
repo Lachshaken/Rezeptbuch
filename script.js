@@ -34,7 +34,7 @@ const RECIPES = [
     title: "Tagliatelle mit Salciccia-Soße",
     category: "Hauptgericht",
     badge: "Meat",
-    image: "images/Tagliatelle_Salciccia.jpeg",
+    image: "..images/Tagliatelle_Salciccia.jpeg",
     time: "60 Min + 60 Min ruhen lassen",
     portions: "3-5 Portionen",
     ingredients: [
