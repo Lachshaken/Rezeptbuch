@@ -45,7 +45,7 @@ const RECIPES = [
       "Pancetta/Guanciale",
       "Salsiccia",
       "1 Zwiebel",
-      "1,5 Zehen Knoblauch"
+      "1,5 Zehen Knoblauch",
       "Salz",
       "Pfeffer",
       "etwas Rotwein",
