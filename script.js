@@ -194,11 +194,11 @@ const RECIPES = [
        "Öl"
     ],
     steps: [
-      "Cashews in Wasser einlegen",
+      "Cashews in Wasser einlegen.",
        "Ofen bei 160C Umluft vorheizen. Zucchini in Stücke schneiden und mit 4 abgezogenen Knoblauchzehen, Öl und Salz in eine Ofenform mit Deckel geben und 35-40 Minuten mit Deckel kochen. Im Anschluss weitere 10 Minuten ohne backen, bis die Zucchini leicht braun wird.",
        "Für die Soße: Cashews, Limettensaft, Salz, Pfeffer, 2 Knoblauchzehen und etwa 60-80ml Wasser im Mixer vermengen.",
        "Zucchini aus dem Ofen nehmen, mit einer Gabel zerdrücken, weiße Bohnen inklusive Bohnenwasser und dem Nuss-Mix hinzugeben und servieren.",
-       "Brot mit etwas Öl anbraten oder Toasten und mit der Zucchini-Bohnen Bowl servieren."
+       "Brot mit etwas Öl anbraten oder Toasten und mit der Zucchini-Bohnen Bowl servieren.",
     ]
   },
   {
