@@ -175,26 +175,30 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Beilage",
+    title: "Creamy Zucchini-Butterbohnen Bowl",
+    category: "Hauptgericht",
     badge: "Veggi",
-    image: "images/krautsalat.jpg",
-    time: "20 Min",
+    image: "images/fehlt.jpg",
+    time: "30 Min",
     portions: "4 Portionen",
     ingredients: [
-      "1/2 Weißkohl",
-      "1 Apfel",
-      "1 Karotte",
-      "3 EL Apfelessig",
-      "2 EL Olivenöl",
-      "1 TL Honig",
-      "Salz, Kümmel"
+      "2 Zucchini",
+      "6 Knoblauchzehen",
+      "800g weiße Bohnen",
+      "Cashew Nüsse",
+      "1 Limette",
+      "Salz",
+      "Pfeffer",
+       "60ml Wasser",
+       "Brot",
+       "Öl"
     ],
     steps: [
-      "Weißkohl fein hobeln und mit Salz kräftig durchkneten.",
-      "Apfel und Karotte grob raspeln.",
-      "Essig, Öl, Honig und Kümmel verrühren, untermischen.",
-      "Mindestens 15 Minuten ziehen lassen."
+      "Cashews in Wasser einlegen",
+       Ofen bei 160C Umluft vorheizen. Zucchini in Stücke schneiden und mit 4 abgezogenen Knoblauchzehen, Öl und Salz in eine Ofenform mit Deckel geben und 35-40 Minuten mit Deckel kochen. Im Anschluss weitere 10 Minuten ohne backen, bis die Zucchini leicht braun wird.",
+       "Für die Soße: Cashews, Limettensaft, Salz, Pfeffer, 2 Knoblauchzehen und etwa 60-80ml Wasser im Mixer vermengen.",
+       "Zucchini aus dem Ofen nehmen, mit einer Gabel zerdrücken, weiße Bohnen inklusive Bohnenwasser und dem Nuss-Mix hinzugeben und servieren.",
+       "Brot mit etwas Öl anbraten oder Toasten und mit der Zucchini-Bohnen Bowl servieren.
     ]
   },
   {
