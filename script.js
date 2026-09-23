@@ -210,12 +210,12 @@ const RECIPES = [
     time: "10 Min",
     portions: "1 Schale",
     ingredients: [
-      "1 Dose Kichererbsen",
-      "2 EL Tahini",
-      "1 Zitrone",
-      "1 Knoblauchzehe",
-      "3 EL Olivenöl",
-      "1 TL Kreuzkümmel",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "Salz"
     ],
     steps: [
@@ -232,11 +232,11 @@ const RECIPES = [
     time: "5 Min",
     portions: "1 Schale",
     ingredients: [
-      "250 g griechischer Joghurt",
-      "1 Bund Schnittlauch",
-      "1 Bund Dill",
-      "1 Knoblauchzehe",
-      "1 TL Zitronensaft",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "Salz, Pfeffer"
     ],
     steps: [
@@ -253,11 +253,11 @@ const RECIPES = [
     time: "35 Min",
     portions: "4 Portionen",
     ingredients: [
-      "1 Hokkaido-Kürbis",
-      "1 Zwiebel",
-      "2 cm Ingwer",
-      "700 ml Gemüsebrühe",
-      "100 ml Kokosmilch",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "Kürbiskernöl"
     ],
     steps: [
@@ -275,12 +275,11 @@ const RECIPES = [
     time: "30 Min",
     portions: "3 Portionen",
     ingredients: [
-      "800 g stückige Tomaten",
-      "1 Zwiebel",
-      "2 Knoblauchzehen",
-      "400 ml Gemüsebrühe",
-      "1 Bund Basilikum",
-      "1 TL Zucker",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "Olivenöl"
     ],
     steps: [
@@ -298,10 +297,11 @@ const RECIPES = [
     time: "20 Min + 3 Std kühlen",
     portions: "4 Portionen",
     ingredients: [
-      "200 g Zartbitterschokolade",
-      "3 Eier",
-      "200 ml Sahne",
-      "2 EL Zucker",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "1 Prise Salz"
     ],
     steps: [
@@ -319,11 +319,11 @@ const RECIPES = [
     time: "50 Min",
     portions: "4 Portionen",
     ingredients: [
-      "5 Äpfel",
-      "150 g Mehl",
-      "100 g Butter",
-      "80 g brauner Zucker",
-      "50 g Haferflocken",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
+      "Platzhalter",
       "1 TL Zimt"
     ],
     steps: [
