@@ -64,7 +64,7 @@ const RECIPES = [
     title: "Eingelegter Feta mit Oliven",
     category: "Beilage",
     badge: "Veggi",
-    image: "images/fehlt.jpeg",
+    image: "images/eingelegter_Feta.jpeg",
     time: "10 Min",
     portions: "5 Portionen",
     ingredients: [
