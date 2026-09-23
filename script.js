@@ -60,100 +60,110 @@ const RECIPES = [
     ]
   },
   {
-    title: "Rührei mit Spinat & Feta",
-    category: "Frühstück",
+    title: "Eingelegter Feta mit Oliven",
+    category: "Beilage",
     badge: "Veggi",
-    image: "images/ruehrei-spinat.jpg",
+    image: "images/fehlt.jpeg",
+    time: "10 Min",
+    portions: "5 Portionen",
+    ingredients: [
+      "Feta",
+      "Oliven",
+      "Olivenöl",
+      "1 Zehe Knoblauch",
+      "Limettensaft",
+      "Basilikum",
+      "Oregano"
+    ],
+    steps: [
+      "Feta in Würfel schneiden, Oliven halbieren, Knoblauch pressen.",
+      "Alle Zutaten nach einem freien Mischverhältnis in ein gefäß geben und mit Olivenöl, Knoblauch und den Gewürzen toppen. Mit Limettensaft abschmecken.",
+    ]
+  },
+  {
+    title: "Halloumi Carbonara",
+    category: "Hauptgericht",
+    badge: "Veggi",
+    image: "images/fehlt.jpeg",
+    time: "30 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "Spaghetti",
+      "3 Eier",
+      "Parmesan gerieben",
+      "Halloumi",
+      "Öl",
+      "1 Zehe Knoblauch",
+      "Pfeffer",
+      "Salz",
+      "Muskat",
+      "Honig"
+    ],
+    steps: [
+      "Nudeln kochen, Halloumi in Würfel schneiden und in einer Pfanne mit zugabe von Honig braten.",
+      "Eigelb, Parmesan, Öl und etwas Wasser verführen, mit Salz und Pfeffer würzen und ggf. noch Muskat hinzufügen.",
+      "Temperatur der Pfanne stark reduzieren, Spaghetti dazu geben und mit angerührter Soße toppen. Mit Deckel kurz stehen lassen, damit die Soße etwas bindet.",
+      "Auf Teller geben und mit weiterem Parmesan und ggf. frischem Basilikum toppen.",
+    ]
+  },
+  {
+    title: "Mais-Feta-Salat",
+    category: "Beilage",
+    badge: "Veggi",
+    image: "images/fehlt.jpeg",
     time: "15 Min",
-    portions: "2 Portionen",
+    portions: "4 Portionen",
     ingredients: [
-      "4 Eier",
-      "2 Handvoll Babyspinat",
-      "60 g Feta",
-      "1 Frühlingszwiebel",
-      "1 EL Olivenöl",
-      "Salz, Pfeffer"
+     "250g Mais",
+      "Feta",
+      "1/2 rote Zwiebel",
+      "1 Zehe Knoblauch",
+      "Griechischer Joghurt",
+      "Mayo",
+      "Koriander",
+      "1 Limette",
+      "1TL Salz",
+      "1TL Pfeffer",
+      "1/2TL Chili",
+      "1TL Paprikapulver",
+       "Öl"
     ],
     steps: [
-      "Frühlingszwiebel in Ringe schneiden und in Olivenöl kurz andünsten.",
-      "Spinat zugeben und zusammenfallen lassen.",
-      "Eier verquirlen, würzen und in die Pfanne geben.",
-      "Bei mittlerer Hitze stocken lassen, Feta darüber zerbröseln."
+      "Ziewbel in dünne Würfel schneiden, Koriander fein hacken.",
+      "Mais mit Paprikapulver in einer Pfanne in Öl anbraten und im Anschluss mit der geschnittenen Zwiebel, gepresstem Knoblauch, Koriander, Feta, Joghurt und Mayo vermischen.",
+      "Mit Salz und Pfeffer abschmecken, nach belieben Chili hinzufügen und Limette darüber pressen.",
     ]
   },
   {
-    title: "Ofengemüse-Bowl mit Kichererbsen",
-    category: "Hauptgericht",
-    badge: "Vegan",
-    image: "images/ofengemuese-bowl.jpg",
-    time: "40 Min",
-    portions: "2 Portionen",
-    ingredients: [
-      "1 Dose Kichererbsen",
-      "1 Süßkartoffel",
-      "1 rote Paprika",
-      "1 Zucchini",
-      "2 EL Olivenöl",
-      "1 TL Paprikapulver",
-      "1 TL Kreuzkümmel",
-      "150 g Quinoa"
-    ],
-    steps: [
-      "Ofen auf 200 °C Ober-/Unterhitze vorheizen.",
-      "Gemüse in mundgerechte Stücke schneiden, mit Kichererbsen, Öl und Gewürzen mischen.",
-      "Auf einem Blech 30 Minuten rösten, nach der Hälfte wenden.",
-      "Quinoa nach Packungsanleitung garen.",
-      "Quinoa in Schalen füllen, Ofengemüse darauf verteilen."
-    ]
-  },
-  {
-    title: "Pasta al Limone",
+    title: "Platzhalter",
     category: "Hauptgericht",
     badge: "Veggi",
-    image: "images/pasta-al-limone.jpg",
-    time: "20 Min",
-    portions: "2 Portionen",
-    ingredients: [
-      "250 g Spaghetti",
-      "1 Bio-Zitrone",
-      "100 ml Sahne",
-      "50 g Parmesan",
-      "1 Knoblauchzehe",
-      "Olivenöl, Salz, Pfeffer"
-    ],
-    steps: [
-      "Spaghetti in Salzwasser al dente kochen, etwas Nudelwasser aufheben.",
-      "Knoblauch fein hacken und in Olivenöl glasig dünsten.",
-      "Sahne, Zitronenabrieb und -saft zugeben, kurz einkochen.",
-      "Nudeln, Parmesan und etwas Nudelwasser unterheben, bis die Sauce cremig ist."
-    ]
-  },
-  {
-    title: "Rote-Linsen-Dal",
-    category: "Hauptgericht",
-    badge: "Veggi",
-    image: "images/rote-linsen-dal.jpg",
+    image: "images/fehlt.jpg",
     time: "35 Min",
     portions: "3 Portionen",
     ingredients: [
-      "250 g rote Linsen",
-      "1 Dose Kokosmilch",
-      "1 Zwiebel",
-      "2 cm Ingwer",
-      "2 Knoblauchzehen",
-      "2 TL Currypulver",
-      "400 ml Gemüsebrühe",
-      "Koriander zum Servieren"
+      "250g Mais",
+      "Feta",
+      "1/2 rote Zwiebel",
+      "1 Zehe Knoblauch",
+      "Griechischer Joghurt",
+      "Mayo",
+      "Koriander",
+      "1 Limette",
+      "1TL Salz",
+      "1TL Pfeffer",
+      "1/2TL Chili",
+      "1TL Paprikapulver",
+       "Öl"
     ],
     steps: [
-      "Zwiebel, Knoblauch und Ingwer fein würfeln und andünsten.",
-      "Currypulver kurz mitrösten.",
-      "Linsen, Kokosmilch und Brühe zugeben, 20 Minuten köcheln lassen.",
-      "Abschmecken und mit frischem Koriander servieren."
+      "Ziewbel in dünne Würfel schneiden, Koriander fein hacken.",
+      "Mais mit Paprikapulver in einer Pfanne in Öl anbraten und im Anschluss mit der geschnittenen Zwiebel, gepresstem Knoblauch, Koriander, Feta, Joghurt und Mayo vermischen.",
+      "Mit Salz und Pfeffer abschmecken, nach belieben Chili hinzufügen und Limette darüber pressen.",
     ]
   },
   {
-    title: "Ofenkartoffeln mit Rosmarin",
+    title: "Platzhalter",
     category: "Beilage",
     badge: "Veggi",
     image: "images/ofenkartoffeln.jpg",
@@ -173,7 +183,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Krautsalat mit Apfel",
+    title: "Platzhalter",
     category: "Beilage",
     badge: "Veggi",
     image: "images/krautsalat.jpg",
@@ -196,7 +206,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Cremiger Hummus",
+    title: "Platzhalter",
     category: "Dips",
     badge: "Vegan",
     image: "images/hummus.jpg",
@@ -218,7 +228,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Joghurt-Kräuter-Dip",
+    title: "Platzhalter",
     category: "Dips",
     badge: "Veggi",
     image: "images/kraeuterdip.jpg",
@@ -239,7 +249,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Kürbissuppe mit Ingwer",
+    title: "Platzhalter",
     category: "Suppen",
     badge: "Herbst",
     image: "images/kuerbissuppe.jpg",
@@ -261,7 +271,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Tomatensuppe mit Basilikum",
+    title: "Platzhalter",
     category: "Suppen",
     badge: "Veggi",
     image: "images/tomatensuppe.jpg",
@@ -284,7 +294,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Schokoladenmousse",
+    title: "Platzhalter",
     category: "Dessert",
     badge: "Für Gäste",
     image: "images/schokomousse.jpg",
@@ -305,7 +315,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Apfelcrumble",
+    title: "Platzhalter",
     category: "Dessert",
     badge: "Veggi",
     image: "images/apfelcrumble.jpg",
