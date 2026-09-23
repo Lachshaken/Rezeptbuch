@@ -26,7 +26,8 @@ const CATEGORIES = [
   "Beilage",
   "Dips",
   "Suppen",
-  "Dessert"
+  "Dessert",
+  "Drinks"
 ];
 
 const RECIPES = [
@@ -48,7 +49,7 @@ const RECIPES = [
       "1,5 Zehen Knoblauch",
       "Salz",
       "Pfeffer",
-      "etwas Rotwein",
+      "etwas Rotwein"
     ],
     steps: [
       "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
