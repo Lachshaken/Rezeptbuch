@@ -135,51 +135,43 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Hauptgericht",
+    title: "Eingelegter Mozzarella mit getrockneten Tomaten",
+    category: "Beilage",
     badge: "Veggi",
     image: "images/fehlt.jpg",
-    time: "35 Min",
-    portions: "3 Portionen",
+    time: "15 Min",
+    portions: "5 Portionen",
     ingredients: [
-      "250g Mais",
-      "Feta",
-      "1/2 rote Zwiebel",
+      "250g Mozzarelle Kugeln",
+      "20g getrocknete Tomaten",
       "1 Zehe Knoblauch",
-      "Griechischer Joghurt",
-      "Mayo",
-      "Koriander",
-      "1 Limette",
-      "1TL Salz",
-      "1TL Pfeffer",
-      "1/2TL Chili",
-      "1TL Paprikapulver",
+      "1TL Oregano",
+      "1TL italienische Kräuter",
+      "frischer Basilikum",
        "Öl"
     ],
     steps: [
-      "Ziewbel in dünne Würfel schneiden, Koriander fein hacken.",
-      "Mais mit Paprikapulver in einer Pfanne in Öl anbraten und im Anschluss mit der geschnittenen Zwiebel, gepresstem Knoblauch, Koriander, Feta, Joghurt und Mayo vermischen.",
-      "Mit Salz und Pfeffer abschmecken, nach belieben Chili hinzufügen und Limette darüber pressen.",
+      "Mozarella Kugeln, geschnittene getrocknete Tomaten und fein geschnittenen Knoblauch mit den restlichen Zutaten in ein Gefäß geben und vermischen.",
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Beilage",
+    title: "Basilikum Presto",
+    category: "Dips",
     badge: "Veggi",
-    image: "images/ofenkartoffeln.jpg",
-    time: "45 Min",
-    portions: "4 Portionen",
+    image: "images/fehlt.jpeg",
+    time: "15 Min",
+    portions: "2 Portionen",
     ingredients: [
-      "1 kg festkochende Kartoffeln",
-      "3 EL Olivenöl",
-      "2 Zweige Rosmarin",
-      "3 Knoblauchzehen",
-      "Grobes Salz"
+      "60g frischer Basilikum",
+      "60g geriebener Parmesan",
+      "2 Zehen Knoblauch",
+      "120ml Olivenöl",
+      "Salz",
+       "1-2TL Zitronensaft",
+       "Pinienkerne"
     ],
     steps: [
-      "Kartoffeln waschen und vierteln.",
-      "Mit Öl, Rosmarin, angedrücktem Knoblauch und Salz mischen.",
-      "Bei 200 °C ca. 40 Minuten backen, zwischendurch wenden."
+      "Alle Zutaten mit einem Mixer vermengen.",
     ]
   },
   {
