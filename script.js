@@ -206,7 +206,7 @@ const RECIPES = [
     title: "Jus du Maison",
     category: "Drinks",
     badge: "No alcohol",
-    image: "images/jusmaison.jpg",
+    image: "images/jusmaison.jpeg",
     time: "5 Min",
     portions: "2 Gläser",
     ingredients: [
