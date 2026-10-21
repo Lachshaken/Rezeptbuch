@@ -86,7 +86,7 @@ const RECIPES = [
     steps: [
       "Salsiccia von der Haut trennen, Zwiebeln und Paprika würfeln, Knoblauch abziehen.",
        "Salsiccia in einem großen Topf in Öl scharf anbraten, danach Zwiebeln, Paprika, etwas getrocknete Tomate und gepressten Knoblauch hinzugeben und anschwitzen. Währenddessen Kohl in Vierecke schneiden.",
-       "Im Anschluss Kohl und Brühe hinzugeben und ca, 30 Minuten kochen lassen. ",
+       "Im Anschluss Kohl und Brühe hinzugeben und ca, 30 Minuten kochen lassen.",
        "Kochsahne hinzugeben und mit Thymian, Salz und Pfeffer abschmecken.",
        "Auf Teller geben und mit Parmesan toppen.",
     ]
