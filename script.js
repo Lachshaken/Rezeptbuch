@@ -23,7 +23,7 @@ const CATEGORIES = [
   "Alle Rezepte",
   "Hauptgericht",
   "Frühstück",
-  "Suppen"
+  "Suppen",
   "Beilage",
   "Dips",
   "Dessert",
