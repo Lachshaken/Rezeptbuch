@@ -298,7 +298,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Burrata-Tomaten-Salat",
+    title: "Burrata-Tomaten-Feigen-Salat",
     category: "Hauptgericht",
     badge: "Veggi",
     image: "images/tomatefeigesalat.jpeg",
