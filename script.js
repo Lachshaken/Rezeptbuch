@@ -256,25 +256,24 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Suppen",
+    title: "Burrata-Tomaten-Salat",
+    category: "Hauptgericht",
     badge: "Veggi",
-    image: "images/tomatensuppe.jpg",
-    time: "30 Min",
-    portions: "3 Portionen",
+    image: "images/BurrataSalat.jpeg",
+    time: "15 Min",
+    portions: "2 Portionen",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
+      "2 Fleischtomaten",
+      "Romanasalat",
+      "1 Burrata",
+      "Pinienkerne",
+      "Balsamico",
       "Olivenöl"
     ],
     steps: [
-      "Zwiebel und Knoblauch in Olivenöl andünsten.",
-      "Tomaten und Brühe zugeben, 20 Minuten köcheln lassen.",
-      "Mit Zucker, Salz und Pfeffer abschmecken.",
-      "Pürieren und mit frischem Basilikum servieren."
+      "Salatblätter klein schneiden und auf einem großen Teller verteilen.",
+      "Fleischtomaten in Scheiben schneiden und halbieren. Dann auf dem Salat im Fächer auflegen.",
+      "Burrata in die Mitte legen, Pinienkerne darauf verteilen und mit Öl und Balsamico toppen."
     ]
   },
   {
