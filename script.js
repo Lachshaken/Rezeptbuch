@@ -60,6 +60,37 @@ const RECIPES = [
        "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas Parmesan darüber streuen - et finito.",
     ]
   },
+   {
+    title: "Salsiccia-Kohl-Suppe",
+    category: "Hauptgericht",
+    badge: "Meat",
+    image: "images/Kohlsuppe.jpeg",
+    time: "70 Min",
+    portions: "6 Portionen",
+    ingredients: [
+      "5 Salsiccia Würstchen",
+      "1/2 Kohl",
+      "1 Zwiebel",
+      "1-2 Paprika",
+      "100g Spinat",
+      "2 Zehen Knoblauch",
+      "1l Brühe",
+      "getrocknete Thomaten",
+      "150ml Kochsahne",
+      "Parmesan",
+      "Öl",
+      "Thymian",
+      "Salz",
+      "Pfeffer"
+    ],
+    steps: [
+      "Salsiccia von der Haut trennen, Zwiebeln und Paprika würfeln, Knoblauch abziehen.",
+       "Salsiccia in einem großen Topf in Öl scharf anbraten, danach Zwiebeln, Paprika, etwas getrocknete Tomate und gepressten Knoblauch hinzugeben und anschwitzen. Währenddessen Kohl in Vierecke schneiden.",
+       "Im Anschluss Kohl und Brühe hinzugeben und ca, 30 Minuten kochen lassen. ",
+       "Kochsahne hinzugeben und mit Thymian, Salz und Pfeffer abschmecken.",
+       "Auf Teller geben und mit Parmesan toppen.",
+    ]
+  },
   {
     title: "Eingelegter Feta mit Oliven",
     category: "Beilage",
