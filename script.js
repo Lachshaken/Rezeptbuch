@@ -221,46 +221,38 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Dips",
-    badge: "Veggi",
-    image: "images/kraeuterdip.jpg",
+    title: "Old School Biarritz",
+    category: "Drinks",
+    badge: "Alcohol",
+    image: "images/oldschool.jpeg",
     time: "5 Min",
-    portions: "1 Schale",
+    portions: "1 Drink",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Salz, Pfeffer"
+      "Dunkler Rum (mit Ananas infundiert)",
+      "Mirabellenlikör",
+      "Vanille-Shrub",
+      "Bitter",
+      "Eiswürfel"
     ],
     steps: [
-      "Kräuter fein hacken.",
-      "Mit Joghurt, gepresstem Knoblauch und Zitronensaft verrühren.",
-      "Würzen und kurz durchziehen lassen."
+      "2cl dunklen Rum mit 2cl mit dem Rest vermischen und auf Eis servieren."
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Suppen",
-    badge: "Herbst",
-    image: "images/kuerbissuppe.jpg",
-    time: "35 Min",
-    portions: "4 Portionen",
+    title: "Pinchada n°2 Biarritz",
+    category: "Drinks",
+    badge: "Alcohol",
+    image: "images/Pinchada.jpeg",
+    time: "5 Min",
+    portions: "1 Drink",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Kürbiskernöl"
+      "Cognac",
+      "Pistazienlikör",
+      "Feigen-Cordial",
+      "Aquafaba"
     ],
     steps: [
-      "Kürbis waschen, entkernen und würfeln (Schale kann dranbleiben).",
-      "Zwiebel und Ingwer andünsten, Kürbis zugeben.",
-      "Mit Brühe auffüllen und 20 Minuten weich kochen.",
-      "Fein pürieren, Kokosmilch einrühren, abschmecken."
+      "Rezept unbekannt."
     ]
   },
   {
