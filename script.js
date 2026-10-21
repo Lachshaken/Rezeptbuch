@@ -273,7 +273,7 @@ const RECIPES = [
     steps: [
       "Salatblätter klein schneiden und auf einem großen Teller verteilen.",
       "Fleischtomaten in Scheiben schneiden und halbieren. Dann auf dem Salat im Fächer auflegen.",
-      "Burrata in die Mitte legen, Pinienkerne darauf verteilen und mit Öl und Balsamico toppen."
+      "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen."
     ]
   },
   {
@@ -298,25 +298,27 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Dessert",
+    title: "Burrata-Tomaten-Salat",
+    category: "Hauptgericht",
     badge: "Veggi",
-    image: "images/apfelcrumble.jpg",
-    time: "50 Min",
-    portions: "4 Portionen",
+    image: "images/tomatefeigesalat.jpeg",
+    time: "15 Min",
+    portions: "2 Portionen",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "1 TL Zimt"
+      "2 Fleischtomaten",
+      "2 Feigen",
+      "1 Burrata",
+      "Basilikumblätter",
+      "Pinienkerne",
+      "Öl",
+      "Balsamico",
+      "Salz",
+      "Pfeffer"
     ],
     steps: [
-      "Äpfel schälen, würfeln und mit Zimt in eine Auflaufform geben.",
-      "Mehl, Haferflocken, Zucker und kalte Butter zu Streuseln verkneten.",
-      "Streusel auf den Äpfeln verteilen.",
-      "Bei 180 °C ca. 35 Minuten goldbraun backen."
+      "Fleischtomaten und Feigen in Scheiben schneiden und gefächert mit den Basilikumblättern auf dem Teller anrichten.",
+      "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen.",
+      "Mit Pfeffer und Salz verfeinern."
     ]
   }
 ];
