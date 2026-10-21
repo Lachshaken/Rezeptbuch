@@ -293,8 +293,8 @@ const RECIPES = [
     ],
     steps: [
       "Spaghetti nach Anleitung kochen.",
-      "Bereits offene Miesmuscheln aussortieren. In einer Pfanne etwas Öl stark erhitzen und erst dann die Miesmuscheln in die Pfanne geben und mit geschlossenem Deckel ca. 2 Minunten braten. Danach mit etwas Weiswein ablöschen und weitere 2 Minuten braten, bis sich die Muscheln öffnen.",
-      "Flüssigkeit aus der Pfanne gießen, Muscheln auf Nudeln verteilen, etwas Öl, Peterilie und Parmesan hinzufügen."
+      "Bereits offene Miesmuscheln aussortieren. In einer Pfanne etwas Öl stark erhitzen und erst dann die Miesmuscheln in die Pfanne geben und mit geschlossenem Deckel ca. 2 Minunten braten. Danach mit etwas Weiswein ablöschen, geschnittene Petersilie hinzufügen und weitere 2 Minuten braten, bis sich die Muscheln öffnen.",
+      "Flüssigkeit aus der Pfanne gießen, Muscheln auf Nudeln verteilen, etwas Öl und Parmesan hinzufügen."
     ]
   },
   {
