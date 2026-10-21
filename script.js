@@ -156,7 +156,7 @@ const RECIPES = [
     ]
   },
   {
-    title: "Basilikum Presto",
+    title: "Basilikum Pesto",
     category: "Dips",
     badge: "Veggi",
     image: "images/fehlt.jpeg",
