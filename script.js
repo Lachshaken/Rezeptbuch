@@ -21,11 +21,11 @@
 
 const CATEGORIES = [
   "Alle Rezepte",
-  "Frühstück",
   "Hauptgericht",
+  "Frühstück",
+  "Suppen"
   "Beilage",
   "Dips",
-  "Suppen",
   "Dessert",
   "Drinks"
 ];
@@ -62,7 +62,7 @@ const RECIPES = [
   },
    {
     title: "Salsiccia-Kohl-Suppe",
-    category: "Suppe",
+    category: "Suppen",
     badge: "Meat",
     image: "images/Kohlsuppe.jpeg",
     time: "70 Min",
