@@ -62,7 +62,7 @@ const RECIPES = [
   },
    {
     title: "Salsiccia-Kohl-Suppe",
-    category: "Hauptgericht",
+    category: "Suppe",
     badge: "Meat",
     image: "images/Kohlsuppe.jpeg",
     time: "70 Min",
