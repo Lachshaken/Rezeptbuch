@@ -277,25 +277,24 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Dessert",
-    badge: "Für Gäste",
-    image: "images/schokomousse.jpg",
-    time: "20 Min + 3 Std kühlen",
-    portions: "4 Portionen",
+    title: "Pasta mit Miesmuscheln",
+    category: "Hauptgericht",
+    badge: "Fisch",
+    image: "images/miesmuschelpasta.jpeg",
+    time: "30 Min",
+    portions: "2 Portionen",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "1 Prise Salz"
+      "350g Spaghetti",
+      "400g Miesmuscheln (tiefgefrohren)",
+      "Weiswein",
+      "Petersilie",
+      "Salz",
+      "Parmesan"
     ],
     steps: [
-      "Schokolade über dem Wasserbad schmelzen und leicht abkühlen lassen.",
-      "Eigelb mit Zucker schaumig rühren, Schokolade unterheben.",
-      "Eiweiß mit Salz und Sahne getrennt steif schlagen.",
-      "Beides vorsichtig unterheben und mindestens 3 Stunden kühlen."
+      "Spaghetti nach Anleitung kochen.",
+      "Bereits offene Miesmuscheln aussortieren. In einer Pfanne etwas Öl stark erhitzen und erst dann die Miesmuscheln in die Pfanne geben und mit geschlossenem Deckel ca. 2 Minunten braten. Danach mit etwas Weiswein ablöschen und weitere 2 Minuten braten, bis sich die Muscheln öffnen.",
+      "Flüssigkeit aus der Pfanne gießen, Muscheln auf Nudeln verteilen, etwas Öl, Peterilie und Parmesan hinzufügen."
     ]
   },
   {
