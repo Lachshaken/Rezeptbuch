@@ -203,25 +203,21 @@ const RECIPES = [
     ]
   },
   {
-    title: "Platzhalter",
-    category: "Dips",
-    badge: "Vegan",
-    image: "images/hummus.jpg",
-    time: "10 Min",
-    portions: "1 Schale",
+    title: "Jus du Maison",
+    category: "Drinks",
+    badge: "No alcohol",
+    image: "images/jusmaison.jpg",
+    time: "5 Min",
+    portions: "2 Gläser",
     ingredients: [
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Platzhalter",
-      "Salz"
+      "Apfelsaft",
+      "Gurkensaft",
+      "Zitrone"
     ],
     steps: [
-      "Kichererbsen abgießen und abspülen.",
-      "Alle Zutaten mit 3–4 EL Eiswasser fein pürieren.",
-      "Abschmecken und mit Olivenöl beträufelt servieren."
+      "Gegebenenfalls ist ein Entsafter notwendig.",
+      "Apfelsaft und Gutkensaft im Verhältnis 50:50 mischen, etwas Zitrone hinzufügen.",
+      "Et voilà. Schmeckt nach Orangen-Karotten-Saft."
     ]
   },
   {
