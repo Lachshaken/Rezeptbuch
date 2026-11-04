@@ -112,7 +112,7 @@ const RECIPES = [
       "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen.",
       "Mit Pfeffer und Salz verfeinern."
     ]
-  }
+  },
   {
     title: "Halloumi Carbonara",
     category: "Hauptgericht",
