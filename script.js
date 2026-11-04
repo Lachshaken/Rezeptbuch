@@ -32,6 +32,25 @@ const CATEGORIES = [
 
 const RECIPES = [
   {
+    title: "Whipped Feta",
+    category: "Dips",
+    badge: "Veggi",
+    image: "images/Fetacreme.jpeg",
+    time: "15 Min",
+    portions: "5 Portionen",
+    ingredients: [
+      "Feta",
+      "Joghurt",
+      "Pistazien",
+      "1 Zehe Knoblauch",
+      "Salz",
+      "Pfeffer"
+    ],
+    steps: [
+      "Diana's Rezept fehlt noch.",
+    ]
+  },
+   {
     title: "Tagliatelle mit Salsiccia-Soße",
     category: "Hauptgericht",
     badge: "Meat",
