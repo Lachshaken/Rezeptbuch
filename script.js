@@ -21,10 +21,10 @@
 
 const CATEGORIES = [
   "Alle Rezepte",
-  "Hauptgericht",
+  "Hauptgerichte",
   "Frühstück",
   "Suppen",
-  "Beilage",
+  "Beilagen",
   "Dips",
   "Dessert",
   "Drinks"
@@ -70,7 +70,7 @@ const RECIPES = [
   },
   {
     title: "Eingelegter Feta mit Oliven",
-    category: "Beilage",
+    category: "Beilagen",
     badge: "Veggi",
     image: "images/eingelegter_Feta.jpeg.png",
     time: "10 Min",
@@ -91,7 +91,7 @@ const RECIPES = [
   },
      {
     title: "Burrata-Tomaten-Feigen-Salat",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Veggi",
     image: "images/tomatefeigesalat.jpeg",
     time: "15 Min",
@@ -115,7 +115,7 @@ const RECIPES = [
   },
   {
     title: "Halloumi Carbonara",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Veggi",
     image: "images/fehlt.jpeg",
     time: "30 Min",
@@ -141,7 +141,7 @@ const RECIPES = [
   },
   {
     title: "Mais-Feta-Salat",
-    category: "Beilage",
+    category: "Beilagen",
     badge: "Veggi",
     image: "images/fehlt.jpeg",
     time: "15 Min",
@@ -169,7 +169,7 @@ const RECIPES = [
   },
   {
     title: "Eingelegter Mozzarella mit getrockneten Tomaten",
-    category: "Beilage",
+    category: "Beilagen",
     badge: "Veggi",
     image: "images/fehlt.jpg",
     time: "15 Min",
@@ -209,7 +209,7 @@ const RECIPES = [
   },
     {
     title: "Tagliatelle mit Salsiccia-Soße",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Meat",
     image: "images/Tagliatelle_Salsiccia.jpeg",
     time: "60 Min + 60 Min ruhen lassen",
@@ -238,7 +238,7 @@ const RECIPES = [
   },
   {
     title: "Creamy Zucchini-Butterbohnen Bowl",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Veggi",
     image: "images/fehlt.jpg",
     time: "30 Min",
@@ -300,7 +300,7 @@ const RECIPES = [
   },
   {
     title: "Burrata-Tomaten-Salat",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Veggi",
     image: "images/BurrataSalat.jpeg",
     time: "15 Min",
@@ -352,7 +352,7 @@ const RECIPES = [
   },
   {
     title: "Pasta mit Miesmuscheln",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Fisch",
     image: "images/miesmuschelpasta.jpeg",
     time: "30 Min",
