@@ -50,64 +50,22 @@ const RECIPES = [
       "Diana's Rezept fehlt noch.",
     ]
   },
-   {
-    title: "Tagliatelle mit Salsiccia-Soße",
-    category: "Hauptgericht",
-    badge: "Meat",
-    image: "images/Tagliatelle_Salsiccia.jpeg",
-    time: "60 Min + 60 Min ruhen lassen",
-    portions: "3-5 Portionen",
+     {
+    title: "Jus du Maison",
+    category: "Drinks",
+    badge: "No alcohol",
+    image: "images/jusmaison.jpeg",
+    time: "5 Min",
+    portions: "2 Gläser",
     ingredients: [
-      "400g Mehl Typ 0",
-      "4 Eier",
-      "15ml Olivenöl",
-      "400ml Passata",
-      "Pancetta/Guanciale",
-      "Salsiccia",
-      "1 Zwiebel",
-      "1,5 Zehen Knoblauch",
-      "Salz",
-      "Pfeffer",
-      "etwas Rotwein"
+      "Apfelsaft",
+      "Gurkensaft",
+      "Zitrone"
     ],
     steps: [
-      "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
-       "Teig mit der Nudelmaschine glätten und in dünne Streifen schneiden. Nudeln ca. 3-4 Minuten kochen und etwas Nudelwasser beiseite stellen.",
-       "Etwas Pancetta/Guancale in kleine Würfel schneiden, Salsiccia (ca. 1 Wurst pro Portion) von der Haut befreien, Zwiebel würfeln, Knoblauch klein schneiden.",
-       "Etwas Pancetta/Guancale für das Topping cross anbraten. Aus der Pfanne nehmen und Salciccia in der gleichen Pfanne braten.",
-       "Zwiebelwürfel und Knoblauch hinzugeben und weiter anbraten. Wahlweise mit Rotwein und etwas Nudelwasser ablöschen und die Passata hinzugeben. Im Anschluss mit Salz und Pfeffer würzen.",
-       "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas Parmesan darüber streuen - et finito.",
-    ]
-  },
-   {
-    title: "Salsiccia-Kohl-Suppe",
-    category: "Suppen",
-    badge: "Meat",
-    image: "images/Kohlsuppe.jpeg",
-    time: "70 Min",
-    portions: "6 Portionen",
-    ingredients: [
-      "5 Salsiccia Würstchen",
-      "1/2 Kohl",
-      "1 Zwiebel",
-      "1-2 Paprika",
-      "100g Spinat",
-      "2 Zehen Knoblauch",
-      "1l Brühe",
-      "getrocknete Thomaten",
-      "150ml Kochsahne",
-      "Parmesan",
-      "Öl",
-      "Thymian",
-      "Salz",
-      "Pfeffer"
-    ],
-    steps: [
-      "Salsiccia von der Haut trennen, Zwiebeln und Paprika würfeln, Knoblauch abziehen.",
-       "Salsiccia in einem großen Topf in Öl scharf anbraten, danach Zwiebeln, Paprika, etwas getrocknete Tomate und gepressten Knoblauch hinzugeben und anschwitzen. Währenddessen Kohl in Vierecke schneiden.",
-       "Im Anschluss Kohl und Brühe hinzugeben und ca, 30 Minuten kochen lassen.",
-       "Kochsahne hinzugeben und mit Thymian, Salz und Pfeffer abschmecken.",
-       "Auf Teller geben und mit Parmesan toppen.",
+      "Gegebenenfalls ist ein Entsafter notwendig.",
+      "Apfelsaft und Gutkensaft im Verhältnis 50:50 mischen, etwas Zitrone hinzufügen.",
+      "Et voilà. Schmeckt nach Orangen-Karotten-Saft."
     ]
   },
   {
@@ -225,6 +183,35 @@ const RECIPES = [
       "Alle Zutaten mit einem Mixer vermengen.",
     ]
   },
+    {
+    title: "Tagliatelle mit Salsiccia-Soße",
+    category: "Hauptgericht",
+    badge: "Meat",
+    image: "images/Tagliatelle_Salsiccia.jpeg",
+    time: "60 Min + 60 Min ruhen lassen",
+    portions: "3-5 Portionen",
+    ingredients: [
+      "400g Mehl Typ 0",
+      "4 Eier",
+      "15ml Olivenöl",
+      "400ml Passata",
+      "Pancetta/Guanciale",
+      "Salsiccia",
+      "1 Zwiebel",
+      "1,5 Zehen Knoblauch",
+      "Salz",
+      "Pfeffer",
+      "etwas Rotwein"
+    ],
+    steps: [
+      "Mehl, Eier, Olivenöl und etwas Salz ca. 20 Minuten zu einem Teig verkneten und ggf etwas Wasser hinzufügen. Teig im Anschluss 1 Stunde ruhen lassen.",
+       "Teig mit der Nudelmaschine glätten und in dünne Streifen schneiden. Nudeln ca. 3-4 Minuten kochen und etwas Nudelwasser beiseite stellen.",
+       "Etwas Pancetta/Guancale in kleine Würfel schneiden, Salsiccia (ca. 1 Wurst pro Portion) von der Haut befreien, Zwiebel würfeln, Knoblauch klein schneiden.",
+       "Etwas Pancetta/Guancale für das Topping cross anbraten. Aus der Pfanne nehmen und Salciccia in der gleichen Pfanne braten.",
+       "Zwiebelwürfel und Knoblauch hinzugeben und weiter anbraten. Wahlweise mit Rotwein und etwas Nudelwasser ablöschen und die Passata hinzugeben. Im Anschluss mit Salz und Pfeffer würzen.",
+       "Die Tagliatelle und die Soße auf den Tellern anrichten, Pancetta/Guancale und etwas Parmesan darüber streuen - et finito.",
+    ]
+  },
   {
     title: "Creamy Zucchini-Butterbohnen Bowl",
     category: "Hauptgericht",
@@ -250,24 +237,6 @@ const RECIPES = [
        "Für die Soße: Cashews, Limettensaft, Salz, Pfeffer, 2 Knoblauchzehen und etwa 60-80ml Wasser im Mixer vermengen.",
        "Zucchini aus dem Ofen nehmen, mit einer Gabel zerdrücken, weiße Bohnen inklusive Bohnenwasser und dem Nuss-Mix hinzugeben und servieren.",
        "Brot mit etwas Öl anbraten oder Toasten und mit der Zucchini-Bohnen Bowl servieren.",
-    ]
-  },
-  {
-    title: "Jus du Maison",
-    category: "Drinks",
-    badge: "No alcohol",
-    image: "images/jusmaison.jpeg",
-    time: "5 Min",
-    portions: "2 Gläser",
-    ingredients: [
-      "Apfelsaft",
-      "Gurkensaft",
-      "Zitrone"
-    ],
-    steps: [
-      "Gegebenenfalls ist ein Entsafter notwendig.",
-      "Apfelsaft und Gutkensaft im Verhältnis 50:50 mischen, etwas Zitrone hinzufügen.",
-      "Et voilà. Schmeckt nach Orangen-Karotten-Saft."
     ]
   },
   {
@@ -324,6 +293,37 @@ const RECIPES = [
       "Salatblätter klein schneiden und auf einem großen Teller verteilen.",
       "Fleischtomaten in Scheiben schneiden und halbieren. Dann auf dem Salat im Fächer auflegen.",
       "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen."
+    ]
+  },
+   {
+    title: "Salsiccia-Kohl-Suppe",
+    category: "Suppen",
+    badge: "Meat",
+    image: "images/Kohlsuppe.jpeg",
+    time: "70 Min",
+    portions: "6 Portionen",
+    ingredients: [
+      "5 Salsiccia Würstchen",
+      "1/2 Kohl",
+      "1 Zwiebel",
+      "1-2 Paprika",
+      "100g Spinat",
+      "2 Zehen Knoblauch",
+      "1l Brühe",
+      "getrocknete Thomaten",
+      "150ml Kochsahne",
+      "Parmesan",
+      "Öl",
+      "Thymian",
+      "Salz",
+      "Pfeffer"
+    ],
+    steps: [
+      "Salsiccia von der Haut trennen, Zwiebeln und Paprika würfeln, Knoblauch abziehen.",
+       "Salsiccia in einem großen Topf in Öl scharf anbraten, danach Zwiebeln, Paprika, etwas getrocknete Tomate und gepressten Knoblauch hinzugeben und anschwitzen. Währenddessen Kohl in Vierecke schneiden.",
+       "Im Anschluss Kohl und Brühe hinzugeben und ca, 30 Minuten kochen lassen.",
+       "Kochsahne hinzugeben und mit Thymian, Salz und Pfeffer abschmecken.",
+       "Auf Teller geben und mit Parmesan toppen.",
     ]
   },
   {
