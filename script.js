@@ -89,6 +89,30 @@ const RECIPES = [
       "Alle Zutaten nach einem freien Mischverhältnis in ein gefäß geben und mit Olivenöl, Knoblauch und den Gewürzen toppen. Mit Limettensaft abschmecken.",
     ]
   },
+     {
+    title: "Burrata-Tomaten-Feigen-Salat",
+    category: "Hauptgericht",
+    badge: "Veggi",
+    image: "images/tomatefeigesalat.jpeg",
+    time: "15 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "2 Fleischtomaten",
+      "2 Feigen",
+      "1 Burrata",
+      "Basilikumblätter",
+      "Pinienkerne",
+      "Öl",
+      "Balsamico",
+      "Salz",
+      "Pfeffer"
+    ],
+    steps: [
+      "Fleischtomaten und Feigen in Scheiben schneiden und gefächert mit den Basilikumblättern auf dem Teller anrichten.",
+      "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen.",
+      "Mit Pfeffer und Salz verfeinern."
+    ]
+  }
   {
     title: "Halloumi Carbonara",
     category: "Hauptgericht",
@@ -345,30 +369,6 @@ const RECIPES = [
       "Spaghetti nach Anleitung kochen.",
       "Bereits offene Miesmuscheln aussortieren. In einer Pfanne etwas Öl stark erhitzen und erst dann die Miesmuscheln in die Pfanne geben und mit geschlossenem Deckel ca. 2 Minunten braten. Danach mit etwas Weiswein ablöschen, geschnittene Petersilie hinzufügen und weitere 2 Minuten braten, bis sich die Muscheln öffnen.",
       "Flüssigkeit aus der Pfanne gießen, Muscheln auf Nudeln verteilen, etwas Öl und Parmesan hinzufügen."
-    ]
-  },
-  {
-    title: "Burrata-Tomaten-Feigen-Salat",
-    category: "Hauptgericht",
-    badge: "Veggi",
-    image: "images/tomatefeigesalat.jpeg",
-    time: "15 Min",
-    portions: "2 Portionen",
-    ingredients: [
-      "2 Fleischtomaten",
-      "2 Feigen",
-      "1 Burrata",
-      "Basilikumblätter",
-      "Pinienkerne",
-      "Öl",
-      "Balsamico",
-      "Salz",
-      "Pfeffer"
-    ],
-    steps: [
-      "Fleischtomaten und Feigen in Scheiben schneiden und gefächert mit den Basilikumblättern auf dem Teller anrichten.",
-      "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen.",
-      "Mit Pfeffer und Salz verfeinern."
     ]
   }
 ];
