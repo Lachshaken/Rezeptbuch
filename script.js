@@ -31,7 +31,23 @@ const CATEGORIES = [
 ];
 
 const RECIPES = [
-  {
+ {
+    title: "London Fog",
+    category: "Drinks",
+    badge: "Tea",
+    image: "images/LondonFog.jpeg",
+    time: "5 Min",
+    portions: "1 Portion",
+    ingredients: [
+      "Schwarztee",
+      "Milch oder Hafermilch",
+      "Lavendel- oder Veilchensirup"
+    ],
+    steps: [
+      "Schwarztee 5 Minuten ziehen lassen, Schuss Milch und Sirup hinzufügen.",
+    ]
+  },
+   {
     title: "Whipped Feta",
     category: "Dips",
     badge: "Veggi",
