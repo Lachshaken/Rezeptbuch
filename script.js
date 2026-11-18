@@ -331,41 +331,6 @@ const RECIPES = [
        "Brot mit etwas Öl anbraten oder Toasten und mit der Zucchini-Bohnen Bowl servieren.",
     ]
   },
-  {
-    title: "Old School Biarritz",
-    category: "Drinks",
-    badge: "Alcohol",
-    image: "images/oldschool.jpeg",
-    time: "5 Min",
-    portions: "1 Drink",
-    ingredients: [
-      "Dunkler Rum (mit Ananas infundiert)",
-      "Mirabellenlikör",
-      "Vanille-Shrub",
-      "Bitter",
-      "Eiswürfel"
-    ],
-    steps: [
-      "2cl dunklen Rum mit 2cl mit dem Rest vermischen und auf Eis servieren."
-    ]
-  },
-  {
-    title: "Pinchada n°2 Biarritz",
-    category: "Drinks",
-    badge: "Alcohol",
-    image: "images/Pinchada.jpeg",
-    time: "5 Min",
-    portions: "1 Drink",
-    ingredients: [
-      "Cognac",
-      "Pistazienlikör",
-      "Feigen-Cordial",
-      "Aquafaba"
-    ],
-    steps: [
-      "Rezept unbekannt."
-    ]
-  },
    {
     title: "Salsiccia-Kohl-Suppe",
     category: "Suppen",
