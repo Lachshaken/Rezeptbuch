@@ -366,27 +366,6 @@ const RECIPES = [
       "Rezept unbekannt."
     ]
   },
-  {
-    title: "Burrata-Tomaten-Salat",
-    category: "Hauptgerichte",
-    badge: "Veggi",
-    image: "images/BurrataSalat.jpeg",
-    time: "15 Min",
-    portions: "2 Portionen",
-    ingredients: [
-      "2 Fleischtomaten",
-      "Romanasalat",
-      "1 Burrata",
-      "Pinienkerne",
-      "Balsamico",
-      "Olivenöl"
-    ],
-    steps: [
-      "Salatblätter klein schneiden und auf einem großen Teller verteilen.",
-      "Fleischtomaten in Scheiben schneiden und halbieren. Dann auf dem Salat im Fächer auflegen.",
-      "Burrata in die Mitte legen, Pinienkerne anbraten und darauf verteilen und mit Öl und Balsamico toppen."
-    ]
-  },
    {
     title: "Salsiccia-Kohl-Suppe",
     category: "Suppen",
