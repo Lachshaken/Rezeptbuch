@@ -33,7 +33,7 @@ const CATEGORIES = [
 const RECIPES = [
   {
     title: "Veggi Peanut Butter Beef Udon",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Veggi",
     image: "images/UdonBowl.jpeg",
     time: "20 Min",
@@ -62,7 +62,7 @@ const RECIPES = [
   },
      {
     title: "Spaghetti Carbonara",
-    category: "Hauptgericht",
+    category: "Hauptgerichte",
     badge: "Meat",
     image: "images/Carbonara.jpeg",
     time: "20 Min",
