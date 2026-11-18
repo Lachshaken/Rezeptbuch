@@ -31,7 +31,59 @@ const CATEGORIES = [
 ];
 
 const RECIPES = [
- {
+  {
+    title: "Veggi Peanut Butter Beef Udon",
+    category: "Hauptgericht",
+    badge: "Veggi",
+    image: "images/UdonBowl.jpeg",
+    time: "20 Min",
+    portions: "2 Portione",
+    ingredients: [
+      "400g Udon-Nudeln",
+      "400g Veggi Hackfleisch",
+      "3 EL Erdnussbutter",
+      "1 TL Zucker",
+      "2 Knoblauchzehen",
+      "150ml heißes Nudelwasser",
+      "Sesamöl",
+      "2 EL Sojasoße",
+      "2 Möhren",
+      "Koriander",
+      "1 Limette"
+    ],
+    steps: [
+      "Möhren raspeln, Koriander hacken, Knoblauch pressen.",
+      "Udon-Nudeln ca. 3 Minuten lang in gesalzenem Wasser kochen und etwas Nudelwasser abschöpfen.",
+      "In einer heißen Pfanne (vegetarisches) Hackfleisch in Sesamöl anbraten, Knoblauch für 30 Sekunden hinzufügen und dann mit Sojasoße ablöschen. Beiseite stellen.",
+      "Erdnussbutter in die Pfanne geben, mit etwas Nudelwasser verrühren bis sie cremig wird. Sesamöl, Sojasoße und Zucker unterrühren.",
+      "Fertige Udon-Nudeln in die Soße geben und verrühren. Ggf. weiteres Nudelwasser hinzugeben.",
+      "Auf Teller anrichten: Udon, Hackfleisch oben drauf, Möhren, Koriander, Sesam & Limette dazu.",
+    ]
+  },
+     {
+    title: "Spaghetti Carbonara",
+    category: "Hauptgericht",
+    badge: "Meat",
+    image: "images/Carbonara.jpeg",
+    time: "20 Min",
+    portions: "2 Portion",
+    ingredients: [
+      "Spaghetti",
+      "4 Eigelb",
+      "Parmesan",
+      "Guancale",
+      "Pfeffer",
+      "Salz",
+      "Öl"
+    ],
+    steps: [
+      "Nudeln nach Anweisung kochen und dabei etwas Nudelwasser abschöpfen.",
+      "In einer Schüssel das Eigelb mit dem Parmesan ordentlich vermischen. Etwas Öl und Nudelwasser hinzufügen, damit es cremig wird. Mit Salz & Pfeffer würzen.",
+      "Guancale in einer Pfanne mit Öl anbraten. Nudeln hinzufügen und warm werden lassen. Temperatur herunterstellen, Carbonara Soße hinzufügen und mit dem Deckel kurz in der Pfanne lassen, damit die Soße sich bindet.",
+      "Noch einmal mit Pfeffer und Slaz würzen und auf Tellern anrichten.",
+    ]
+  },
+   {
     title: "London Fog",
     category: "Drinks",
     badge: "Tea",
