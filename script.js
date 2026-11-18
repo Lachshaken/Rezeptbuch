@@ -136,6 +136,26 @@ const RECIPES = [
       "Et voilà. Schmeckt nach Orangen-Karotten-Saft."
     ]
   },
+       {
+    title: "Erdbeer Milkshake",
+    category: "Drinks",
+    badge: "No alcohol",
+    image: "images/StrawberryMilkshake.jpeg",
+    time: "5 Min",
+    portions: "2 Gläser",
+    ingredients: [
+      "Erdbeeren",
+      "Eiswürfel",
+      "Milch",
+      "Joghurt",
+      "Sahne",
+      "Milkaaufschnitt"
+    ],
+    steps: [
+      "Erdbeeren, Naturjoghurt, Eiswürfel und etwas Milch im Mixer mixen.",
+      "Etwas warm gewordenen Milkaaufschnitt im Glas verteilen, Milkshake hinzufügen und mit Sahne toppen."
+    ]
+  },
   {
     title: "Eingelegter Feta mit Oliven",
     category: "Beilagen",
