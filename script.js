@@ -32,6 +32,48 @@ const CATEGORIES = [
 
 const RECIPES = [
   {
+    title: "Glasnudelsalat",
+    category: "Hauptgerichte",
+    badge: "Veggi",
+    image: "images/Glasnudelsalat.jpeg",
+    time: "20 Min",
+    portions: "3 Portione",
+    ingredients: [
+      "xg Glasnudeln",
+      "xg xxx"
+    ],
+    steps: [
+      "xxx.",
+      "xxx.",
+      "xxx.",
+      "xxx.",
+      "xxx.",
+      "xxx.",
+    ]
+  },
+     {
+    title: "Omlett",
+    category: "Frühstück",
+    badge: "Veggi",
+    image: "images/Omlett.jpeg",
+    time: "10 Min",
+    portions: "2 Portionen",
+    ingredients: [
+      "3 Eier",
+      "1/4 Zwiebel",
+      "Frühlingszwiebel",
+      "Feta oder Hirtenkäse",
+      "Chili",
+      "Salz",
+      "Pfeffer"
+    ],
+    steps: [
+      "Zwiebeln in Streifen und Frühlingszwiebeln in Ringe schneiden.",
+      "Zwiebeln in einer Pfanne anbraten, etwas Zucker hinzufügen, damit die Zwiebeln karamelisieren. Kurz anbraten und mit Chilisoße verfeinern. Frühlingszwiebeln hinzugeben und Feta reinkrümeln.",
+      "Eier hinzugeben und mit Deckel braten bis das Omlett von unten braun ist. Wenn fertig zuklappen und servieren.",
+    ]
+  },
+   {
     title: "Veggi Peanut Butter Beef Udon",
     category: "Hauptgerichte",
     badge: "Veggi",
